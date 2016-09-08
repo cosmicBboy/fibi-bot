@@ -1,0 +1,12 @@
+{
+    "context": {
+        "path": "/facebook",
+        "method": "GET"
+    },
+    "queryString": {
+        "hub.verify_token": "hcpdciobn6Q"
+    },
+    "env": {
+        "facebookVerifyToken": "hcpdciobn6Q"
+    }
+}

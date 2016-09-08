@@ -7,6 +7,8 @@ const builder = require('claudia-bot-builder'),
   format = text => (text && text.substring(0, 80));
 module.exports = builder((request, apiReq) => {
   apiReq.lambdaContext.callbackWaitsForEmptyEventLoop = false;
+  console.log("request:", request);
+  console.log("apiReq:", apiReq);
   return ws.findEntities(request.text).then(r => r.results).then(entities => {
     if (!entities.length) {
       return `Unfortunately, could not find anything about ${request.text} in Wikidata`;
