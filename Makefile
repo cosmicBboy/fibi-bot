@@ -2,22 +2,22 @@
 
 AWS_DEFAULT_PROFILE=fibidev
 
-deploy:
+create:
 	claudia create --profile $(AWS_DEFAULT_PROFILE)
 	               --region us-east-1 
 	               --api-module bot 
 	               --configure-fb-bot
-	               --name fibi-bot
+	               --name $(NAME)
 
-update-production:
+deploy-prod:
 	claudia update --profile $(AWS_DEFAULT_PROFILE)
 
-update-dev:
+deploy-dev:
 	claudia update --profile $(AWS_DEFAULT_PROFILE) \
 				   --version development
 
-.PHONY: test
-test:
+.PHONY: tests
+tests:
 	claudia test-lambda --profile $(AWS_DEFAULT_PROFILE) \
 						--event ./test/get_event.json
 	claudia test-lambda --profile $(AWS_DEFAULT_PROFILE) \

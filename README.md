@@ -1,18 +1,21 @@
-# Chat bot with buttons
+# FIBI
 
-A simple bot demonstrating how to create buttons and post-back actions on Facebook Messenger using Claudia.js.
+## Setup
 
-[Try it live](https://m.me/factbot) using Facebook Messenger.
+Make sure you install the [AWS CLI](http://docs.aws.amazon.com/cli/latest/userguide/installing.html)
 
-[![](https://claudiajs.com/assets/factbot.gif)](https://m.me/factbot)
+Configure your fibidev profile:
+```
+aws configure --profile fibidev
+AWS Access Key ID [None]: <my_access_key_id>
+AWS Secret Access Key [None]: <my_secret_access_key>
+Default region name [None]: us-east-1
+Default output format [None]: json
+```
 
-## Features
+## Build Options
 
-The bot will query [WikiData](https://www.wikidata.org) for anything you send it. If it finds a single entity, it will print out the facts that Wikidata holds on the entity. If it finds multiple entities, it will offer a sequence of buttons for the users to select between matching entities, and then print out the facts from about the selected object.
-
-Try, for example, typing in 'David Hasselhof', or just 'David'.
-
-## Privacy
-
-This bot keeps no user information.
-
+- create the lambda function with `make create NAME=<bot_name>`
+- deploy to production with`make deploy-prod`
+- deploy to development with `make deploy-dev`
+- run local tests `make tests`

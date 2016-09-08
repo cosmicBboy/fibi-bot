@@ -4,9 +4,11 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "create": "claudia create --api-module bot --region us-east-1",
-    "configure-fb": "claudia update --configure-fb-bot",
-    "deploy": "claudia update"
+    "create": "claudia create --profile fibidev --api-module bot --region us-east-1",
+    "configure-fb": "claudia update --profile fibidev --configure-fb-bot",
+    "deploy": "claudia update --profile fibidev",
+    "test-post": "claudia test-lambda --profile fibidev --event test/post_event.json",
+    "test-get": "claudia test-lambda --profile fibidev --event test/post_event.json"
   },
   "license": "MIT",
   "dependencies": {
