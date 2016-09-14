@@ -4,11 +4,14 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "deploy": "claudia create --profile fibidev --version production --region us-east-1 --api-module api",
     "create": "claudia create --profile fibidev --api-module bot --region us-east-1",
     "configure-fb": "claudia update --profile fibidev --configure-fb-bot",
-    "deploy": "claudia update --profile fibidev",
+    "update": "claudia update --profile fibidev",
     "test-post": "claudia test-lambda --profile fibidev --event test/post_event.json",
-    "test-get": "claudia test-lambda --profile fibidev --event test/post_event.json"
+    "test-get": "claudia test-lambda --profile fibidev --event test/get_event.json",
+    "release": "claudia set-version --profile fibidev --version production",
+    "start": "ntl"
   },
   "license": "MIT",
   "dependencies": {
@@ -16,6 +19,7 @@
     "wikidata-search": "^1.0.3"
   },
   "devDependencies": {
-    "claudia": "^1.4.1"
+    "claudia": "^1.4.1",
+    "ntl": "^1.1.3"
   }
 }
