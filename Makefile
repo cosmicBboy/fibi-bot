@@ -3,10 +3,10 @@
 AWS_DEFAULT_PROFILE=fibidev
 
 create:
-	claudia create --profile $(AWS_DEFAULT_PROFILE)
-	               --region us-east-1 
-	               --api-module bot 
-	               --configure-fb-bot
+	claudia create --profile $(AWS_DEFAULT_PROFILE) \
+	               --region us-east-1 \
+	               --api-module bot \
+	               --configure-fb-bot \
 	               --name $(NAME)
 
 deploy-prod:

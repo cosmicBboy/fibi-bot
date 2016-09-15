@@ -16,7 +16,8 @@
   "license": "MIT",
   "dependencies": {
     "claudia-bot-builder": "^1.1.0",
-    "wikidata-search": "^1.0.3"
+    "wikidata-search": "^1.0.3",
+	"huh": "^1.1.4"
   },
   "devDependencies": {
     "claudia": "^1.4.1",
