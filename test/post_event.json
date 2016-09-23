@@ -3,14 +3,19 @@
         "path": "/facebook",
         "method": "POST"
     },
+    "body": {
+        "object": "page"
+    },
+    "rawBody": "\"message\": {\"text\":\"Mr Robot\"}",
     "queryString": {
-        "hub.verify_token": "hcpdciobn6Q"
+        "hub.verify_token": "cfixh1LBf80"
     },
     "env": {
-        "facebookVerifyToken": "hcpdciobn6Q"
+        "facebookVerifyToken": "cfixh1LBf80"
     },
     "body": {
         "entry": []
-    }
+    },
+    "type": "facebook"
 }
 

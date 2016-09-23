@@ -1,13 +1,14 @@
 {
-  "name": "bot-with-buttons",
+  "name": "fibichat",
   "private": "true",
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "deploy": "claudia create --profile fibidev --version production --region us-east-1 --api-module api",
-    "create": "claudia create --profile fibidev --api-module bot --region us-east-1",
-    "configure-fb": "claudia update --profile fibidev --configure-fb-bot",
-    "update": "claudia update --profile fibidev",
+    "create": "claudia create --profile fibidev --region us-east-1 --api-module bot --configure-fb-bot",
+    "update-dev": "claudia update --profile fibidev --version development --configure-fb-bot",
+    "update-prod": "claudia update --profile fibidev --version production --configure-fb-bot",
+    "logs-dev": "aws --profile fibidev logs filter-log-events --log-group-name /aws/lambda/fibitest --region us-east-1",
+    "logs-prod": "aws --profile fibidev logs filter-log-events --log-group-name /aws/lambda/fibitest --region us-east-1",
     "test-post": "claudia test-lambda --profile fibidev --event test/post_event.json",
     "test-get": "claudia test-lambda --profile fibidev --event test/get_event.json",
     "release": "claudia set-version --profile fibidev --version production",
@@ -16,8 +17,9 @@
   "license": "MIT",
   "dependencies": {
     "claudia-bot-builder": "^1.1.0",
-    "wikidata-search": "^1.0.3",
-	"huh": "^1.1.4"
+    "huh": "^1.1.4",
+    "underscore": "^1.8.3",
+    "wikidata-search": "^1.0.3"
   },
   "devDependencies": {
     "claudia": "^1.4.1",

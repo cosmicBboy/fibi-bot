@@ -1,11 +1,11 @@
 {
   "lambda": {
-    "role": "fibitest-executor",
-    "name": "fibitest",
+    "role": "fibichat-executor",
+    "name": "fibichat",
     "region": "us-east-1"
   },
   "api": {
-    "id": "vt6eej8il7",
+    "id": "7v6gs5mksa",
     "module": "bot"
   }
 }
