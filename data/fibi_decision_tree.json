@@ -1,0 +1,41 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "type": "question",
+      "copy": "Were you born on or after June 15, 1981 and are currently at least 15 years old?",
+      "refersTo": ["2", "3"]
+    },
+    {
+      "id": "2",
+      "type": "input",
+      "copy": "Yes",
+      "refersTo": ["5"],
+    },
+    {
+      "id": "3",
+      "type": "input",
+      "copy": "No",
+      "refersTo": ["4"],
+    }
+    {
+      "id": "4",
+      "type": "link",
+      "copy": "Nuts. you're too old. Go read the New Yorker.",
+      "url": "www.newyorker.com",
+      "refersTo": []
+    },
+    {
+      "id": "5",
+      "type": "question",
+      "copy": "Are you a resident, citizen, or have some other form of immigrant status?",
+      "refersTo": ["1000"],
+    },
+    {
+      "id": "1000",
+      "type": "end",
+      "copy": "I'm still under construction... check in another time!",
+      "refersTo": [],
+    }
+  ]
+}
