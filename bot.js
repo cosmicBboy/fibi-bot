@@ -14,7 +14,7 @@ function mainMenu() {
   // here by finding the pointsTo field in each of the inputs. In the case
   // below, the .addButton calls contain the data for `input` types.
   return new fbTemplate.generic()
-    .addBubble(`What kind of support are you interested in?`)
+    .addBubble(`What kind of support are you interested in dude?`)
       .addButton("legal status", "1 question")
       .addButton("scholarships", "1 question")
       .addButton("health care", "1 question")
