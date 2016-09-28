@@ -55,6 +55,8 @@ function questionTemplate(questionObj) {
 
 const api = botBuilder(function (request, originalApiRequest) {
   console.log("This is the request", JSON.stringify(request));
+  console.log(
+    "This is the original api request", JSON.stringify(originalApiRequest));
   originalApiRequest.lambdaContext.callbackWaitsForEmptyEventLoop = false;
 
   if (!request.postback) {
