@@ -6,7 +6,7 @@ const botBuilder = require('claudia-bot-builder');
 const fbTemplate = botBuilder.fbTemplate;
 
 console.log("Attempting to parse data");
-const dtree = require('./data/fibi_decision_tree.json');
+const dtree = require('./data/decision_tree_data.json');
 const data = dtree;
 
 function mainMenu() {
