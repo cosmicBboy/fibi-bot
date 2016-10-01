@@ -34,6 +34,10 @@ function questionTemplate(questionObj) {
     var message = new fbTemplate.generic()
       .addBubble(questionObj.copy);
 
+    if (questionObj.blurb.length > 0) {
+      message.addQuickReply(questionObj.blurb);
+    }
+
     _.each(inputs, input => {
       // Assume that input can only point to one question
       var nextId = input.pointsTo.split(',')[0];
