@@ -7,23 +7,23 @@ const fbTemplate = botBuilder.fbTemplate;
 
 console.log("Attempting to parse data");
 const dtree = require('./data/fibi_decision_tree.json');
-const data = dtree.data;
+const data = dtree;
 
 function mainMenu() {
   // TODO: The logic for figuring out with question is next should be done
   // here by finding the pointsTo field in each of the inputs. In the case
   // below, the .addButton calls contain the data for `input` types.
   return new fbTemplate.generic()
-    .addBubble(`What kind of support are you interested in dude?`)
+    .addBubble(`What kind of support are you interested?`)
       .addButton("legal status", "1 question")
+      .addButton("driver's license", "1 question")
       .addButton("scholarships", "1 question")
-      .addButton("health care", "1 question")
     .get();
 }
 
 function questionTemplate(questionObj) {
   console.log("This is the current question:", questionObj);
-  var inputIds = questionObj.pointsTo;
+  var inputIds =  questionObj.pointsTo.split(',');
   var inputs = _.filter(data, o => { return _.contains(inputIds, o.id); });
   console.log("These are the inputIds:", inputIds);
   console.log("These are the inputs:", inputs);
