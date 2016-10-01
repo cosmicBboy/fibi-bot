@@ -59,7 +59,7 @@
     "id": "9",
     "type": "question",
     "copy": "Which of the following immigration status do you have?",
-    "pointsTo": "10, 11, 12",
+    "pointsTo": "10,11,12",
     "url": ""
   },
   {
@@ -87,7 +87,7 @@
     "id": "13",
     "type": "question",
     "copy": "Were you 15 or younger when you moved to the U.S.?",
-    "pointsTo": "14, 15",
+    "pointsTo": "14,15",
     "url": ""
   },
   {
@@ -108,7 +108,7 @@
     "id": "16",
     "type": "question",
     "copy": "Were you in the U.S. on June 15, 2012?",
-    "pointsTo": "17, 18",
+    "pointsTo": "17,18",
     "url": ""
   },
   {
@@ -129,7 +129,7 @@
     "id": "19",
     "type": "question",
     "copy": "Have you left the U.S. since arriving?",
-    "pointsTo": "20, 21",
+    "pointsTo": "20,21",
     "url": ""
   },
   {
@@ -150,7 +150,7 @@
     "id": "22",
     "type": "question",
     "copy": "Have you been in the U.S. since June 15, 2007?",
-    "pointsTo": "23, 24",
+    "pointsTo": "23,24",
     "url": ""
   },
   {
@@ -171,7 +171,7 @@
     "id": "25",
     "type": "question",
     "copy": "Have you ever been arrested or convicted of a crime?",
-    "pointsTo": "26, 27",
+    "pointsTo": "26,27",
     "url": ""
   },
   {
@@ -192,7 +192,7 @@
     "id": "28",
     "type": "question",
     "copy": "Do any of the following scenarios apply to you? Have not been convicted of a felony, significant misdemeanor,or three or more other misdemeanors, and do not otherwise pose a threat to national security or public safety.",
-    "pointsTo": "29, 30",
+    "pointsTo": "29,30",
     "url": ""
   },
   {
@@ -213,7 +213,7 @@
     "id": "31",
     "type": "question",
     "copy": "Do any of the following scenarios apply to you? Are currently in school, have graduated or obtained a certificate of completion from high school, have obtained a general education development (GED) certificate, or are an honorably discharged veteran of the Coast Guard or Armed Forces of the United States",
-    "pointsTo": "32, 33",
+    "pointsTo": "32,33",
     "url": ""
   },
   {
