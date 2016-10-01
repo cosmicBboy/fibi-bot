@@ -17,7 +17,7 @@ function mainMenu() {
     .addBubble(`What kind of support are you interested?`)
       .addButton("legal status", "1 question")
       .addButton("driver's license", "1 question")
-      .addButton("scholarships", "1 question")
+      .addButton("scholarships", "54 question")
     .get();
 }
 
@@ -36,7 +36,7 @@ function questionTemplate(questionObj) {
 
     _.each(inputs, input => {
       // Assume that input can only point to one question
-      var nextId = input.pointsTo[0];
+      var nextId = input.pointsTo.split(',')[0];
       console.log("Points to:", nextId);
       var nextQuestion = _.find(data, o => { 
         return o.id === nextId;
