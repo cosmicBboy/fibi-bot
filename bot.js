@@ -34,10 +34,6 @@ function questionTemplate(questionObj) {
     var message = new fbTemplate.generic()
       .addBubble(questionObj.copy);
 
-    if (questionObj.blurb.length > 0) {
-      message.addQuickReply(questionObj.blurb);
-    }
-
     _.each(inputs, input => {
       // Assume that input can only point to one question
       var nextId = input.pointsTo.split(',')[0];
@@ -52,7 +48,13 @@ function questionTemplate(questionObj) {
       console.log("Request text:", text);
       message.addButton(input.copy, text);
     });
-    return message.get();
+
+    // If object contains blurb, return a list of [blurb, message]
+    if (questionObj.blurb.length > 0) {
+      return [questionObj.blurb, message.get()];
+    } else {
+      return message.get();
+    }
   }
 
 }
