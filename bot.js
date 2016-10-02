@@ -28,6 +28,8 @@ function questionTemplate(questionObj) {
   console.log("These are the inputIds:", inputIds);
   console.log("These are the inputs:", inputs);
 
+  //This assumes that the Question will directy point to the end object
+  //but now our data is updated so that only an input will point to the end
   if (inputs[0].type === "END") {
     return inputs[0].copy;
   } else {
@@ -77,6 +79,16 @@ const api = botBuilder(function (request, originalApiRequest) {
           mainMenu()
         ]
       });
+  }
+
+  if (_.contains(request.text.split(' '), "END")) {
+    var split =  request.text.split(' ');
+    var endObjectId = split[0];
+    var endObject = _.find(data, o => { 
+      return o.id === endObjectId;
+    });
+    console.log("This is the next object:", endObject);
+    return endObject.copy;
   }
 
   if (_.contains(request.text.split(' '), "question")) {

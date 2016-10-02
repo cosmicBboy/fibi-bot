@@ -34,7 +34,7 @@ id,type,copy,blurb,pointsTo,url
 33,input,No,,35,
 34,link,Woot! It looks like you qualify for DACA. What're you waiting for? Go apply!,,,https://www.roadtostatus.com/immigration-forms/uscis-form-i-821d/
 35,END,I'm still under construction... check in another time!,,,
-36,question,Do you have a Social Security Number?,,"36,37",
+36,question,Do you have a Social Security Number?,,"37,38",
 37,input,Yes,,39,
 38,input,No,,42,
 39,question,Are you at least 14 years old,,"40,41",
