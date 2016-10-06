@@ -40,7 +40,7 @@ function questionTemplate(questionObj) {
       // Assume that input can only point to one question
       var nextId = input.pointsTo.split(',')[0];
       console.log("Points to:", nextId);
-      var nextQuestion = _.find(data, o => { 
+      var nextQuestion = _.find(data, o => {
         return o.id === nextId;
       });
       console.log("Next Question:", nextQuestion);
@@ -65,7 +65,6 @@ const api = botBuilder(function (request, originalApiRequest) {
   console.log("This is the request", JSON.stringify(request));
   console.log(
     "This is the original api request", JSON.stringify(originalApiRequest));
-  originalApiRequest.lambdaContext.callbackWaitsForEmptyEventLoop = false;
 
   if (!request.postback) {
     return rp.get(`https://graph.facebook.com/v2.6/${request.sender}?fields=first_name,last_name,profile_pic,locale,timezone,gender&access_token=${originalApiRequest.env.facebookAccessToken}`)
@@ -84,7 +83,7 @@ const api = botBuilder(function (request, originalApiRequest) {
   if (_.contains(request.text.split(' '), "END")) {
     var split =  request.text.split(' ');
     var endObjectId = split[0];
-    var endObject = _.find(data, o => { 
+    var endObject = _.find(data, o => {
       return o.id === endObjectId;
     });
     console.log("This is the next object:", endObject);
@@ -94,7 +93,7 @@ const api = botBuilder(function (request, originalApiRequest) {
   if (_.contains(request.text.split(' '), "question")) {
     var split =  request.text.split(' ');
     var nextId = split[0];
-    var nextQuestion = _.find(data, o => { 
+    var nextQuestion = _.find(data, o => {
       return o.id === nextId;
     });
     console.log("This is the next question:", nextQuestion);
@@ -104,7 +103,7 @@ const api = botBuilder(function (request, originalApiRequest) {
   if (_.contains(request.text.split(' '), "link")) {
     var split =  request.text.split(' ');
     var linkId = split[0];
-    var link = _.find(data, o => { 
+    var link = _.find(data, o => {
       return o.id === linkId;
     });
     console.log("This is the final link:", link);

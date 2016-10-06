@@ -1,13 +1,13 @@
 {
-  "name": "fibichat",
+  "name": "fibi",
   "private": "true",
   "version": "1.0.0",
   "description": "",
   "scripts": {
     "create": "claudia create --profile fibidev --region us-east-1 --api-module bot --configure-fb-bot",
-    "update-dev": "claudia update --profile fibidev --version development --configure-fb-bot",
-    "update-prod": "claudia update --profile fibidev --version production --configure-fb-bot",
-    "update-sandbox": "claudia update --profile fibidev --version sandbox --configure-fb-bot",
+    "update-dev": "claudia update --profile fibidev --version development --configure-fb-bot --configure-app",
+    "update-prod": "claudia update --profile fibidev --version production --configure-fb-bot --configure-app",
+    "git": "claudia update --profile fibidev --version sandbox --configure-fb-bot",
     "logs-dev": "aws --profile fibidev logs filter-log-events --log-group-name /aws/lambda/fibitest --region us-east-1",
     "logs-prod": "aws --profile fibidev logs filter-log-events --log-group-name /aws/lambda/fibitest --region us-east-1",
     "test-post": "claudia test-lambda --profile fibidev --event test/post_event.json",
