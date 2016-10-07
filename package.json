@@ -18,7 +18,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "claudia-bot-builder": "^1.1.0",
+    "claudia-bot-builder": "^1.4.5",
     "fast-csv": "^2.3.0",
     "huh": "^1.1.4",
     "lodash": "^4.16.2",
