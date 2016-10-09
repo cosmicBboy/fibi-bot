@@ -27,7 +27,7 @@ csv.fromPath(path_arg, options).
 	});
 
 var writeJson = function(fileName, data){
-	var file = 'data/' + fileName + '.json';
+	var file = 'data/json/' + fileName + '.json';
 	console.log('Going to write data to file: ' + file);
 	var prettyJson = JSON.stringify(data, null, 2);
 	fs.writeFile(file, prettyJson, (err) => { if(err) console.log(err);});
