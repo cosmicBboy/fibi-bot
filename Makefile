@@ -2,6 +2,30 @@
 
 AWS_DEFAULT_PROFILE=fibidev
 
+.PHONY: dev-deps
+dev-deps:
+	npm install
+	pip install pygments
+
+.PHONY: logs
+lambda-logs:
+ifndef STREAM_NAMES
+	@$(eval OPTS = )
+else
+	@$(eval OPTS = --log-stream-names $(STREAM_NAMES))
+endif
+	aws --profile fibidev --region us-east-1 \
+		logs filter-log-events --log-group-name /aws/lambda/fibi $(OPTS) |\
+		pygmentize -l json
+
+.PHONY: ls-log-streams
+ls-log-streams:
+	aws --profile fibidev --region us-east-1 \
+		logs describe-log-streams --log-group-name /aws/lambda/fibi \
+		--order-by LastEventTime |\
+		pygmentize -l json |\
+		grep logStreamName
+
 .PHONY: set-timeout
 set-timout:
 	aws --profile $(AWS_DEFAULT_PROFILE) lambda update-function-configuration --function-name fibi --timeout $(T)

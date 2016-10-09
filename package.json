@@ -8,10 +8,8 @@
     "update-dev": "claudia update --profile fibidev --version development --configure-fb-bot --configure-app",
     "update-prod": "claudia update --profile fibidev --version production --configure-fb-bot --configure-app",
     "git": "claudia update --profile fibidev --version sandbox --configure-fb-bot",
-    "logs-dev": "aws --profile fibidev --region us-east-1 logs filter-log-events --log-group-name /aws/lambda/fibi",
-    "logs-prod": "aws --profile fibidev --region us-east-1 logs filter-log-events --log-group-name /aws/lambda/fibi",
-    "test-dev": "claudia test-lambda --profile fibidev --event test/dev_test.json",
-    "test-prod": "claudia test-lambda --profile fibidev --event test/prod_test.json",
+    "test-post": "claudia test-lambda --profile fibidev --event test/post_event.json",
+    "test-get": "claudia test-lambda --profile fibidev --event test/get_event.json",
     "release": "claudia set-version --profile fibidev --version production",
     "create-data": "node scripts/create-json-from-csv.js data/csv/decision_tree_data.csv",
     "start": "ntl"
