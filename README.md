@@ -13,9 +13,27 @@ Default region name [None]: us-east-1
 Default output format [None]: json
 ```
 
+### Install Dev Dependencies
+```
+make dev-deps
+```
+
 ## Build Options
 
 - create the lambda function with `make create NAME=<bot_name>`
 - deploy to production with`make deploy-prod`
 - deploy to development with `make deploy-dev`
 - run local tests `make tests`
+
+## Viewing logs
+
+```
+# view all logs
+make lambda-logs
+
+# get logs for only certain stream names
+make lambda-logs STREAM_NAMES="<stream_name>"
+
+# view all stream names
+make ls-log-streams
+```
