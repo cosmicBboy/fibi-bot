@@ -4,7 +4,10 @@
     "type": "question",
     "copy": "Were you born on or after June 15, 1981 and are currently at least 15 years old?",
     "blurb": "",
-    "pointsTo": "2,3",
+    "pointsTo": [
+      "2",
+      "3"
+    ],
     "url": ""
   },
   {
@@ -12,7 +15,9 @@
     "type": "input",
     "copy": "Yes",
     "blurb": "",
-    "pointsTo": "5",
+    "pointsTo": [
+      "5"
+    ],
     "url": ""
   },
   {
@@ -20,7 +25,9 @@
     "type": "input",
     "copy": "No",
     "blurb": "",
-    "pointsTo": "4",
+    "pointsTo": [
+      "4"
+    ],
     "url": ""
   },
   {
@@ -28,7 +35,9 @@
     "type": "link",
     "copy": "Nuts, you're too old. Go read the New Yorker.",
     "blurb": "",
-    "pointsTo": "",
+    "pointsTo": [
+      ""
+    ],
     "url": "newyorker.com"
   },
   {
@@ -36,7 +45,11 @@
     "type": "question",
     "copy": "Are you a resident, citizen, or have some other form of immigrant status?",
     "blurb": "",
-    "pointsTo": "6,7,8",
+    "pointsTo": [
+      "6",
+      "7",
+      "8"
+    ],
     "url": ""
   },
   {
@@ -44,7 +57,9 @@
     "type": "input",
     "copy": "Resident",
     "blurb": "",
-    "pointsTo": "36",
+    "pointsTo": [
+      "36"
+    ],
     "url": ""
   },
   {
@@ -52,7 +67,9 @@
     "type": "input",
     "copy": "Citizen",
     "blurb": "",
-    "pointsTo": "36",
+    "pointsTo": [
+      "36"
+    ],
     "url": ""
   },
   {
@@ -60,7 +77,9 @@
     "type": "input",
     "copy": "Other form of immigrant status",
     "blurb": "",
-    "pointsTo": "9",
+    "pointsTo": [
+      "9"
+    ],
     "url": ""
   },
   {
@@ -68,7 +87,11 @@
     "type": "question",
     "copy": "Which of the following immigration status do you have?",
     "blurb": "",
-    "pointsTo": "10,11,12",
+    "pointsTo": [
+      "10",
+      "11",
+      "12"
+    ],
     "url": ""
   },
   {
@@ -76,7 +99,9 @@
     "type": "input",
     "copy": "Student Visa",
     "blurb": "",
-    "pointsTo": "35",
+    "pointsTo": [
+      "35"
+    ],
     "url": ""
   },
   {
@@ -84,7 +109,9 @@
     "type": "input",
     "copy": "No status (I'm here undocumented)",
     "blurb": "",
-    "pointsTo": "13",
+    "pointsTo": [
+      "13"
+    ],
     "url": ""
   },
   {
@@ -92,7 +119,9 @@
     "type": "input",
     "copy": "I have DACA",
     "blurb": "",
-    "pointsTo": "35",
+    "pointsTo": [
+      "35"
+    ],
     "url": ""
   },
   {
@@ -100,7 +129,10 @@
     "type": "question",
     "copy": "Were you 15 or younger when you moved to the U.S.?",
     "blurb": "",
-    "pointsTo": "14,15",
+    "pointsTo": [
+      "14",
+      "15"
+    ],
     "url": ""
   },
   {
@@ -108,7 +140,9 @@
     "type": "input",
     "copy": "Yes",
     "blurb": "",
-    "pointsTo": "16",
+    "pointsTo": [
+      "16"
+    ],
     "url": ""
   },
   {
@@ -116,7 +150,9 @@
     "type": "input",
     "copy": "No",
     "blurb": "",
-    "pointsTo": "35",
+    "pointsTo": [
+      "35"
+    ],
     "url": ""
   },
   {
@@ -124,7 +160,10 @@
     "type": "question",
     "copy": "Were you in the U.S. on June 15, 2012?",
     "blurb": "",
-    "pointsTo": "17,18",
+    "pointsTo": [
+      "17",
+      "18"
+    ],
     "url": ""
   },
   {
@@ -132,7 +171,9 @@
     "type": "input",
     "copy": "Yes",
     "blurb": "",
-    "pointsTo": "19",
+    "pointsTo": [
+      "19"
+    ],
     "url": ""
   },
   {
@@ -140,7 +181,9 @@
     "type": "input",
     "copy": "No",
     "blurb": "",
-    "pointsTo": "35",
+    "pointsTo": [
+      "35"
+    ],
     "url": ""
   },
   {
@@ -148,7 +191,10 @@
     "type": "question",
     "copy": "Have you left the U.S. since arriving?",
     "blurb": "",
-    "pointsTo": "20,21",
+    "pointsTo": [
+      "20",
+      "21"
+    ],
     "url": ""
   },
   {
@@ -156,7 +202,9 @@
     "type": "input",
     "copy": "Yes",
     "blurb": "",
-    "pointsTo": "22",
+    "pointsTo": [
+      "22"
+    ],
     "url": ""
   },
   {
@@ -164,7 +212,9 @@
     "type": "input",
     "copy": "No",
     "blurb": "",
-    "pointsTo": "25",
+    "pointsTo": [
+      "25"
+    ],
     "url": ""
   },
   {
@@ -172,7 +222,10 @@
     "type": "question",
     "copy": "Have you been in the U.S. since June 15, 2007?",
     "blurb": "",
-    "pointsTo": "23,24",
+    "pointsTo": [
+      "23",
+      "24"
+    ],
     "url": ""
   },
   {
@@ -180,7 +233,9 @@
     "type": "input",
     "copy": "Yes",
     "blurb": "",
-    "pointsTo": "25",
+    "pointsTo": [
+      "25"
+    ],
     "url": ""
   },
   {
@@ -188,7 +243,9 @@
     "type": "input",
     "copy": "No",
     "blurb": "",
-    "pointsTo": "35",
+    "pointsTo": [
+      "35"
+    ],
     "url": ""
   },
   {
@@ -196,7 +253,10 @@
     "type": "question",
     "copy": "Have you ever been arrested or convicted of a crime?",
     "blurb": "",
-    "pointsTo": "26,27",
+    "pointsTo": [
+      "26",
+      "27"
+    ],
     "url": ""
   },
   {
@@ -204,7 +264,9 @@
     "type": "input",
     "copy": "Yes",
     "blurb": "",
-    "pointsTo": "28",
+    "pointsTo": [
+      "28"
+    ],
     "url": ""
   },
   {
@@ -212,7 +274,9 @@
     "type": "input",
     "copy": "No",
     "blurb": "",
-    "pointsTo": "31",
+    "pointsTo": [
+      "31"
+    ],
     "url": ""
   },
   {
@@ -220,7 +284,10 @@
     "type": "question",
     "copy": "Do any of the above scenarios apply to you?",
     "blurb": "I have not been convicted of a felony, significant misdemeanor,or three or more other misdemeanors, and do not otherwise pose a threat to national security or public safety.",
-    "pointsTo": "29,30",
+    "pointsTo": [
+      "29",
+      "30"
+    ],
     "url": ""
   },
   {
@@ -228,7 +295,9 @@
     "type": "input",
     "copy": "Yes",
     "blurb": "",
-    "pointsTo": "31",
+    "pointsTo": [
+      "31"
+    ],
     "url": ""
   },
   {
@@ -236,7 +305,9 @@
     "type": "input",
     "copy": "No",
     "blurb": "",
-    "pointsTo": "35",
+    "pointsTo": [
+      "35"
+    ],
     "url": ""
   },
   {
@@ -244,7 +315,10 @@
     "type": "question",
     "copy": "Do any of the above scenarios apply to you?",
     "blurb": "I am currently in school, have graduated or obtained a certificate of completion from high school, have obtained a general education development (GED) certificate, or are an honorably discharged veteran of the Coast Guard or Armed Forces of the United States",
-    "pointsTo": "32,33",
+    "pointsTo": [
+      "32",
+      "33"
+    ],
     "url": ""
   },
   {
@@ -252,7 +326,9 @@
     "type": "input",
     "copy": "Yes",
     "blurb": "",
-    "pointsTo": "34",
+    "pointsTo": [
+      "34"
+    ],
     "url": ""
   },
   {
@@ -260,7 +336,9 @@
     "type": "input",
     "copy": "No",
     "blurb": "",
-    "pointsTo": "35",
+    "pointsTo": [
+      "35"
+    ],
     "url": ""
   },
   {
@@ -268,7 +346,9 @@
     "type": "link",
     "copy": "Woot! It looks like you qualify for DACA. What're you waiting for? Go apply!",
     "blurb": "",
-    "pointsTo": "",
+    "pointsTo": [
+      ""
+    ],
     "url": "https://www.roadtostatus.com/immigration-forms/uscis-form-i-821d/"
   },
   {
@@ -276,7 +356,9 @@
     "type": "END",
     "copy": "I'm still under construction... check in another time!",
     "blurb": "",
-    "pointsTo": "",
+    "pointsTo": [
+      ""
+    ],
     "url": ""
   },
   {
@@ -284,7 +366,10 @@
     "type": "question",
     "copy": "Do you have a Social Security Number?",
     "blurb": "",
-    "pointsTo": "37,38",
+    "pointsTo": [
+      "37",
+      "38"
+    ],
     "url": ""
   },
   {
@@ -292,7 +377,9 @@
     "type": "input",
     "copy": "Yes",
     "blurb": "",
-    "pointsTo": "39",
+    "pointsTo": [
+      "39"
+    ],
     "url": ""
   },
   {
@@ -300,7 +387,9 @@
     "type": "input",
     "copy": "No",
     "blurb": "",
-    "pointsTo": "42",
+    "pointsTo": [
+      "42"
+    ],
     "url": ""
   },
   {
@@ -308,7 +397,10 @@
     "type": "question",
     "copy": "Are you at least 14 years old",
     "blurb": "",
-    "pointsTo": "40,41",
+    "pointsTo": [
+      "40",
+      "41"
+    ],
     "url": ""
   },
   {
@@ -316,7 +408,9 @@
     "type": "input",
     "copy": "Yes",
     "blurb": "",
-    "pointsTo": "45",
+    "pointsTo": [
+      "45"
+    ],
     "url": ""
   },
   {
@@ -324,7 +418,9 @@
     "type": "input",
     "copy": "No",
     "blurb": "",
-    "pointsTo": "35",
+    "pointsTo": [
+      "35"
+    ],
     "url": ""
   },
   {
@@ -332,7 +428,9 @@
     "type": "question",
     "copy": "Do you have one of the above?",
     "blurb": "I have proof of ineligibility: documents establishing valid legal status that was issued for one or more years and have at least 6 months of lawful status remaining and a letter from the Social Security administration saying you are ineligible for a Social Security number.",
-    "pointsTo": "37",
+    "pointsTo": [
+      "37"
+    ],
     "url": ""
   },
   {
@@ -340,7 +438,9 @@
     "type": "input",
     "copy": "Yes",
     "blurb": "",
-    "pointsTo": "45",
+    "pointsTo": [
+      "45"
+    ],
     "url": ""
   },
   {
@@ -348,7 +448,9 @@
     "type": "input",
     "copy": "No",
     "blurb": "",
-    "pointsTo": "35",
+    "pointsTo": [
+      "35"
+    ],
     "url": ""
   },
   {
@@ -356,7 +458,10 @@
     "type": "question",
     "copy": "Do you have a learners Permit?",
     "blurb": "",
-    "pointsTo": "46,47",
+    "pointsTo": [
+      "46",
+      "47"
+    ],
     "url": ""
   },
   {
@@ -364,7 +469,9 @@
     "type": "input",
     "copy": "Yes",
     "blurb": "",
-    "pointsTo": "35",
+    "pointsTo": [
+      "35"
+    ],
     "url": ""
   },
   {
@@ -372,7 +479,9 @@
     "type": "input",
     "copy": "No",
     "blurb": "",
-    "pointsTo": "48",
+    "pointsTo": [
+      "48"
+    ],
     "url": ""
   },
   {
@@ -380,7 +489,11 @@
     "type": "question",
     "copy": "Do you have acceptable proof of your identity and date of birth?",
     "blurb": "",
-    "pointsTo": "49,50,51",
+    "pointsTo": [
+      "49",
+      "50",
+      "51"
+    ],
     "url": ""
   },
   {
@@ -388,7 +501,9 @@
     "type": "input",
     "copy": "What's this?",
     "blurb": "",
-    "pointsTo": "53",
+    "pointsTo": [
+      "53"
+    ],
     "url": ""
   },
   {
@@ -396,7 +511,9 @@
     "type": "input",
     "copy": "Yes",
     "blurb": "",
-    "pointsTo": "52",
+    "pointsTo": [
+      "52"
+    ],
     "url": ""
   },
   {
@@ -404,7 +521,9 @@
     "type": "input",
     "copy": "No",
     "blurb": "",
-    "pointsTo": "35",
+    "pointsTo": [
+      "35"
+    ],
     "url": ""
   },
   {
@@ -412,7 +531,9 @@
     "type": "link",
     "copy": "Drivers License Resource",
     "blurb": "",
-    "pointsTo": "",
+    "pointsTo": [
+      ""
+    ],
     "url": "https://dmv.ny.gov/driver-license/get-driver-license"
   },
   {
@@ -420,7 +541,9 @@
     "type": "link",
     "copy": "Find out more here:",
     "blurb": "",
-    "pointsTo": "",
+    "pointsTo": [
+      ""
+    ],
     "url": "https://dmv.ny.gov/driver-license/prove-identity-age-permitlicense"
   },
   {
@@ -428,7 +551,10 @@
     "type": "question",
     "copy": "Do you have a GPA of 2.75 or higher?",
     "blurb": "",
-    "pointsTo": "55,56",
+    "pointsTo": [
+      "55",
+      "56"
+    ],
     "url": ""
   },
   {
@@ -436,7 +562,9 @@
     "type": "input",
     "copy": "Yes",
     "blurb": "",
-    "pointsTo": "57",
+    "pointsTo": [
+      "57"
+    ],
     "url": ""
   },
   {
@@ -444,7 +572,9 @@
     "type": "input",
     "copy": "No",
     "blurb": "",
-    "pointsTo": "35",
+    "pointsTo": [
+      "35"
+    ],
     "url": ""
   },
   {
@@ -452,7 +582,10 @@
     "type": "question",
     "copy": "Do you have a Social Security Number?",
     "blurb": "",
-    "pointsTo": "58,59",
+    "pointsTo": [
+      "58",
+      "59"
+    ],
     "url": ""
   },
   {
@@ -460,7 +593,9 @@
     "type": "input",
     "copy": "Yes",
     "blurb": "",
-    "pointsTo": "60",
+    "pointsTo": [
+      "60"
+    ],
     "url": ""
   },
   {
@@ -468,7 +603,9 @@
     "type": "input",
     "copy": "No",
     "blurb": "",
-    "pointsTo": "60",
+    "pointsTo": [
+      "60"
+    ],
     "url": ""
   },
   {
@@ -476,7 +613,9 @@
     "type": "link",
     "copy": "Here are the SHPE scholarship programs you might be interested in!",
     "blurb": "",
-    "pointsTo": "",
+    "pointsTo": [
+      ""
+    ],
     "url": "http://shpe.org/scholarships"
   },
   {
@@ -484,7 +623,9 @@
     "type": "link",
     "copy": "You might also be interested in the Hispanic Scholarship Fund.",
     "blurb": "",
-    "pointsTo": "",
+    "pointsTo": [
+      ""
+    ],
     "url": "http://hsf.net/en/scholarships/programs/general-college-scholarships"
   }
 ]

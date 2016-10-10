@@ -5,8 +5,7 @@ const _ = require('underscore');
 const botBuilder = require('claudia-bot-builder');
 const fbTemplate = botBuilder.fbTemplate;
 
-console.log("Attempting to parse data");
-const dtree = require('./data/decision_tree_data.json');
+const dtree = require('./data/json/decision_tree_data.json');
 const data = dtree;
 
 function mainMenu() {
@@ -14,15 +13,15 @@ function mainMenu() {
   // here by finding the pointsTo field in each of the inputs. In the case
   // below, the .addButton calls contain the data for `input` types.
   return new fbTemplate.text(`What kind of support are you interested?`)
-      .addQuickReply("legal status", "1 question")
-      .addQuickReply("driver's license", "1 question")
-      .addQuickReply("scholarships", "54 question")
+      .addQuickReply("Legal Status", "1 question")
+      .addQuickReply("Driver's License", "1 question")
+      .addQuickReply("Scholarships", "54 question")
     .get();
 }
 
 function questionTemplate(questionObj) {
   console.log("This is the current question:", questionObj);
-  var inputIds =  questionObj.pointsTo.split(',');
+  var inputIds =  questionObj.pointsTo;
   var inputs = _.filter(data, o => { return _.contains(inputIds, o.id); });
   console.log("These are the inputIds:", inputIds);
   console.log("These are the inputs:", inputs);
@@ -36,7 +35,7 @@ function questionTemplate(questionObj) {
 
     _.each(inputs, input => {
       // Assume that input can only point to one question
-      var nextId = input.pointsTo.split(',')[0];
+      var nextId = input.pointsTo[0];
       console.log("Points to:", nextId);
       var nextQuestion = _.find(data, o => {
         return o.id === nextId;
@@ -78,20 +77,20 @@ const api = botBuilder(function (request, originalApiRequest) {
   console.log("quick reply:", quickReply);
   console.log("START_OVER", request.text == "START_OVER");
   console.log("quick reply?", !quickReply);
+  console.log("request.postback", !request.postback);
 
   if (request.text == "START_OVER" || !quickReply &&
       !request.postback) {
-    return rp.get(`https://graph.facebook.com/v2.6/${request.sender}?fields=first_name,last_name,profile_pic,locale,timezone,gender&access_token=${originalApiRequest.env.facebookAccessToken}`)
+	var url = `https://graph.facebook.com/v2.6/${request.sender}?fields=first_name,last_name,profile_pic,locale,timezone,gender&access_token=${originalApiRequest.env.facebookAccessToken}`;
+    return rp.get(url)
       .then(response => {
         console.log("This is the response", JSON.stringify(response));
         var user = JSON.parse(response.body)
         console.log("This is the user", JSON.stringify(user));
-        return [
-          `Hi ${user.first_name}, I'm FIBI. I'm made for immigrants, by immigrants.`,
-          `I can try to help you find resources to support obtaining legal status, scholarships, and health care.`,
-          mainMenu()
-        ]
-      });
+
+		var intro = [`Hi ${user.first_name}, I'm FIBI. I'm made for immigrants, by immigrants.`,`I can try to help you find resources to support obtaining legal status, scholarships, and health care.`, mainMenu()];
+		return intro;
+      }).catch(error => {console.log('received error: ' + error);});
   }
 
   if (!!quickReply) {

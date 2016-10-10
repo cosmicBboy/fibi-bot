@@ -13,7 +13,11 @@ csv.fromPath(path_arg, options).
 	on('data', function(data){
 		var json = {};
 		_.forIn(data, function(value, key){
-			json[key]= value;
+			if(key == 'pointsTo'){
+				value = value.split(',');
+			}
+
+			json[key] = value;
 		});
 		json_data.push(json);	
 	}).
