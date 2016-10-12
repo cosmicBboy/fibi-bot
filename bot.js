@@ -14,7 +14,7 @@ function mainMenu() {
   // below, the .addButton calls contain the data for `input` types.
   return new fbTemplate.text(`What kind of support are you interested?`)
       .addQuickReply("Legal Status", "1 question")
-      .addQuickReply("Driver's License", "1 question")
+      .addQuickReply("Driver's License", "62 question")
       .addQuickReply("Scholarships", "54 question")
     .get();
 }
@@ -35,7 +35,7 @@ function questionTemplate(questionObj) {
 
     _.each(inputs, input => {
       // Assume that input can only point to one question
-      var nextId = input.pointsTo[0];
+	var nextId = input.pointsTo[0];
       console.log("Points to:", nextId);
       var nextQuestion = _.find(data, o => {
         return o.id === nextId;
@@ -82,7 +82,7 @@ const api = botBuilder(function (request, originalApiRequest) {
   if (request.text == "START_OVER" || !quickReply &&
       !request.postback) {
 	var url = `https://graph.facebook.com/v2.6/${request.sender}?fields=first_name,last_name,profile_pic,locale,timezone,gender&access_token=${originalApiRequest.env.facebookAccessToken}`;
-    return rp.get(url)
+	return rp.get(url)
       .then(response => {
         console.log("This is the response", JSON.stringify(response));
         var user = JSON.parse(response.body)
