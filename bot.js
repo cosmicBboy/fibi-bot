@@ -35,11 +35,16 @@ function questionTemplate(questionObj) {
 
     _.each(inputs, input => {
       // Assume that input can only point to one question
-	var nextId = input.pointsTo[0];
+	  var nextId = input.pointsTo[0];
       console.log("Points to:", nextId);
       var nextQuestion = _.find(data, o => {
         return o.id === nextId;
       });
+
+	  if(input.type === 'link'){
+	    nextQuestion = input;
+	  }		
+
       console.log("Next Question:", nextQuestion);
       var text = `${nextQuestion.id} ${nextQuestion.type}`;
       console.log("This is a single input:", input);
@@ -77,7 +82,6 @@ const api = botBuilder(function (request, originalApiRequest) {
   console.log("quick reply:", quickReply);
   console.log("START_OVER", request.text == "START_OVER");
   console.log("quick reply?", !quickReply);
-  console.log("request.postback", !request.postback);
 
   if (request.text == "START_OVER" || !quickReply &&
       !request.postback) {
