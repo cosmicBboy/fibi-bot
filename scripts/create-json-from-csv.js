@@ -14,7 +14,7 @@ csv.fromPath(path_arg, options).
 		var json = {};
 		_.forIn(data, function(value, key){
 			if(key == 'pointsTo'){
-				value = value.split(',');
+				value = _.filter(value.split(','), obj => {return obj.length > 0;});
 			}
 
 			json[key] = value;
