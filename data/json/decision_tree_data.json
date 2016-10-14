@@ -38,7 +38,9 @@
     "type": "link",
     "copy": "Nuts, you're too old. Go read the New Yorker.",
     "blurb": "",
-    "pointsTo": [],
+    "pointsTo": [
+      ""
+    ],
     "url": "newyorker.com",
     "urlText": ""
   },
@@ -162,7 +164,7 @@
     "copy": "No",
     "blurb": "",
     "pointsTo": [
-      "1003"
+      "END"
     ],
     "url": "",
     "urlText": ""
@@ -410,14 +412,17 @@
     "type": "link",
     "copy": "Woot! It looks like you qualify for DACA. What're you waiting for?",
     "blurb": "",
-    "pointsTo": [],
+    "pointsTo": [
+      "1004",
+      "1005"
+    ],
     "url": "https://www.roadtostatus.com/immigration-forms/uscis-form-i-821d/",
-    "urlText": "Apply!"
+    "urlText": "Apply for DACA"
   },
   {
     "id": "1003",
     "type": "link",
-    "copy": "Sign up below and we'll get back to you soon!",
+    "copy": "Sign up below and we'll get back to you soon with more resources!",
     "blurb": "It doesn't look like you qualify for DACA 😞 Don't worry! There are many non-profit organizations that can help you support you with your legal status. ",
     "pointsTo": [
       "1004",
@@ -451,7 +456,7 @@
   {
     "id": "35",
     "type": "END",
-    "copy": "Unfortunately, I don't know how to help you with that 😞. But thanks for chatting with me! I'm still under construction, but if you'd like me to keep you posted on developments, you can sign up below",
+    "copy": "In that case, I don't know how I can help you more 😞, but thanks for chatting with me! I'm still under construction, and if you'd like me to keep you posted on developments, you can sign up below",
     "blurb": "",
     "pointsTo": [
       "START_OVER"
@@ -646,7 +651,9 @@
     "type": "link",
     "copy": "Find out more here:",
     "blurb": "",
-    "pointsTo": [],
+    "pointsTo": [
+      ""
+    ],
     "url": "https://dmv.ny.gov/driver-license/prove-identity-age-permitlicense",
     "urlText": ""
   },
@@ -725,7 +732,9 @@
     "type": "link",
     "copy": "Here are the SHPE scholarship programs you might be interested in!",
     "blurb": "",
-    "pointsTo": [],
+    "pointsTo": [
+      ""
+    ],
     "url": "http://shpe.org/scholarships",
     "urlText": ""
   },
@@ -734,7 +743,9 @@
     "type": "link",
     "copy": "You might also be interested in the Hispanic Scholarship Fund.",
     "blurb": "",
-    "pointsTo": [],
+    "pointsTo": [
+      ""
+    ],
     "url": "http://hsf.net/en/scholarships/programs/general-college-scholarships",
     "urlText": ""
   },
@@ -823,7 +834,9 @@
     "type": "link",
     "copy": "To prepare for the written test, visit Driver's Manuel & Practice Tests.",
     "blurb": "",
-    "pointsTo": [],
+    "pointsTo": [
+      ""
+    ],
     "url": "https://dmv.ny.gov/driver-license/drivers-manual-practice-tests",
     "urlText": ""
   },
@@ -854,7 +867,9 @@
     "type": "link",
     "copy": "Make a reservation online.",
     "blurb": "",
-    "pointsTo": [],
+    "pointsTo": [
+      ""
+    ],
     "url": "https://visit.dmv.ny.gov/onlineReserve/indexB.html",
     "urlText": ""
   },
@@ -876,7 +891,9 @@
     "type": "link",
     "copy": "What is the Application for Permit, Driver License or Non-Driver ID Card (MV-44)",
     "blurb": "",
-    "pointsTo": [],
+    "pointsTo": [
+      ""
+    ],
     "url": "https://dmv.ny.gov/forms/mv44.pdf",
     "urlText": ""
   },
@@ -896,7 +913,9 @@
     "type": "link",
     "copy": "What are acceptable proofs of identity and date of birth?",
     "blurb": "",
-    "pointsTo": [],
+    "pointsTo": [
+      ""
+    ],
     "url": "https://dmv.ny.gov/driver-license/prove-identity-age-permitlicense",
     "urlText": ""
   },
@@ -905,7 +924,9 @@
     "type": "link",
     "copy": "What is the payment fee?",
     "blurb": "",
-    "pointsTo": [],
+    "pointsTo": [
+      ""
+    ],
     "url": "https://dmv.ny.gov/driver-license/fees-refunds",
     "urlText": ""
   },
@@ -1005,7 +1026,9 @@
     "type": "link",
     "copy": "There are additional restrictions for learner permit holders under age 18.",
     "blurb": "You may not drive with a learner permit on: 1) any street within a park in New York City, 2) any bridge or tunnel under the jurisdiction of the tri-borough Bridge and Tunel Authority, 3) the Cross Crountry, Hutchinson River, Saw Mill River, or Taconic State parkways in Westchester County, and 4) a DMV road test area.",
-    "pointsTo": [],
+    "pointsTo": [
+      ""
+    ],
     "url": "https://dmv.ny.gov/node/2132",
     "urlText": ""
   },
@@ -1026,7 +1049,9 @@
     "type": "link",
     "copy": "You can find the course curriculum and other information in the Pre-Licensing Course Instructor’s Manual (MV-277).\n\n",
     "blurb": "",
-    "pointsTo": [],
+    "pointsTo": [
+      ""
+    ],
     "url": "https://dmv.ny.gov/forms/mv277.pdf",
     "urlText": ""
   },
@@ -1057,7 +1082,9 @@
     "type": "link",
     "copy": "Search for Driving Instructions near me.",
     "blurb": "",
-    "pointsTo": [],
+    "pointsTo": [
+      ""
+    ],
     "url": "https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=driving%20instructions%20near%20me",
     "urlText": ""
   },
@@ -1078,7 +1105,9 @@
     "type": "link",
     "copy": "If you are under age 18, your parent must complete Certification of Supervised Driving (MV-262) to certify that you have had the requierd hours of supervised practice driving.",
     "blurb": "",
-    "pointsTo": [],
+    "pointsTo": [
+      ""
+    ],
     "url": "https://dmv.ny.gov/forms/mv262.pdf",
     "urlText": ""
   },
@@ -1087,7 +1116,9 @@
     "type": "link",
     "copy": "For more information on what to practice, visit website.",
     "blurb": "",
-    "pointsTo": [],
+    "pointsTo": [
+      ""
+    ],
     "url": "https://dmv.ny.gov/driver-license/prepare-your-road-test",
     "urlText": ""
   },
@@ -1209,7 +1240,9 @@
     "type": "link",
     "copy": "You can schedule a road test online.",
     "blurb": "",
-    "pointsTo": [],
+    "pointsTo": [
+      ""
+    ],
     "url": "https://roadtest.dmv.ny.gov/Default.asp",
     "urlText": ""
   },
@@ -1218,7 +1251,9 @@
     "type": "link",
     "copy": "Visit Social Security Administration to receive a letter of ineligibility.",
     "blurb": "",
-    "pointsTo": [],
+    "pointsTo": [
+      ""
+    ],
     "url": "https://www.ssa.gov/",
     "urlText": ""
   }

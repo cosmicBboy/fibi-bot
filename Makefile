@@ -52,3 +52,8 @@ rm-menu:
 	  "setting_type":"call_to_actions", \
 	  "thread_state":"existing_thread" \
 	}' "https://graph.facebook.com/v2.6/me/thread_settings?access_token=$(PAGE_ACCESS_TOKEN)"
+
+.PHONY: update-data
+update-data:
+	mv ~/Downloads/decision_tree_data\ -\ Sheet1.csv data/csv/decision_tree_data.csv
+	npm run create-data

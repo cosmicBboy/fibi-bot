@@ -21,21 +21,22 @@ function mainMenu() {
 
 function questionTemplate(questionObj) {
   console.log("This is the current question:", questionObj);
-  var inputIds =  questionObj.pointsTo;
+  var inputIds = questionObj.pointsTo;
   var inputs = _.filter(data, o => { return _.contains(inputIds, o.id); });
   console.log("These are the inputIds:", inputIds);
   console.log("These are the inputs:", inputs);
 
   //This assumes that the Question will directy point to the end object
   //but now our data is updated so that only an input will point to the end
-  if (inputs[0].type === "END") {
-    return inputs[0].copy;
-  } else {
-    var message = new fbTemplate.text(questionObj.copy);
+  var message = new fbTemplate.text(questionObj.copy);
 
-    _.each(inputs, input => {
-      // Assume that input can only point to one question
-	  var nextId = input.pointsTo[0];
+  _.each(inputs, input => {
+    // Assume that input can only point to one question
+    var nextId = input.pointsTo[0];
+    if (nextId == "END") {
+      console.log("input ENDs interaction");
+      message.addQuickReply(input.copy, nextId);
+    } else {
       console.log("Points to:", nextId);
       var nextQuestion = _.find(data, o => {
         return o.id === nextId;
@@ -51,16 +52,15 @@ function questionTemplate(questionObj) {
       console.log("Copy:", input.copy);
       console.log("Request text:", text);
       message.addQuickReply(input.copy, text);
-    });
-
-    // If object contains blurb, return a list of [blurb, message]
-    if (questionObj.blurb.length > 0) {
-      return [questionObj.blurb, message.get()];
-    } else {
-      return message.get();
     }
-  }
+  });
 
+  // If object contains blurb, return a list of [blurb, message]
+  if (questionObj.blurb.length > 0) {
+    return [questionObj.blurb, message.get()];
+  } else {
+    return message.get();
+  }
 }
 
 const api = botBuilder(function (request, originalApiRequest) {
@@ -114,7 +114,9 @@ const api = botBuilder(function (request, originalApiRequest) {
       return o.id === endObjectId;
     });
     console.log("This is the next object:", endObject);
-    return endObject.copy;
+    return new fbTemplate.text(endObject.copy)
+      .addQuickReply("Chat with me again!", "START_OVER")
+      .get();
   }
 
   if (_.contains(payload.split(' '), "question")) {
@@ -134,10 +136,54 @@ const api = botBuilder(function (request, originalApiRequest) {
       return o.id === linkId;
     });
     console.log("This is the final link:", link);
-    return new fbTemplate.generic()
+    var urlText;
+    if (link.urlText.length > 0) {
+      urlText = link.urlText;
+    } else {
+      urlText = "Go to website";
+    }
+
+    // Create baseline message
+    var message = new fbTemplate.generic()
       .addBubble(link.copy)
-        .addButton("Go to website", link.url)
-      .get();
+        .addButton(urlText, link.url);
+
+    // If the link points to anything, then add more quickReply
+    console.log("Link points to:", link.pointsTo);
+    if (link.pointsTo.length > 0) {
+      var linkInputIds = link.pointsTo;
+      var linkInputs = _.filter(
+        data, o => { return _.contains(linkInputIds, o.id); });
+
+      console.log("These are the linkInputs:", linkInputs);
+
+      _.each(linkInputs, linkInput => {
+        // Assume that input can only point to one question
+        if (linkInput.pointsTo[0] == "START_OVER") {
+          message.addButton(linkInput.copy, "START_OVER");
+        } else {
+          // Assume that input can only point to one question
+          var nextId = linkInput.pointsTo[0];
+          console.log("Points to:", nextId);
+          var nextQuestion = _.find(data, o => {
+            return o.id === nextId;
+          });
+          console.log("Next Question:", nextQuestion);
+          var text = `${nextQuestion.id} ${nextQuestion.type}`;
+          console.log("This is a single linkInput:", linkInput);
+          console.log("Copy:", linkInput.copy);
+          console.log("Request text:", text);
+          message.addButton(linkInput.copy, text);
+        }
+      });
+    }
+    var result = message.get();
+    console.log("This is the link message:", result.attachment.payload.elements);
+    if (link.blurb.length > 0) {
+      return [link.blurb, result];
+    } else {
+      return result;
+    }
   }
 
 });
