@@ -5,8 +5,7 @@ const _ = require('underscore');
 const botBuilder = require('claudia-bot-builder');
 const fbTemplate = botBuilder.fbTemplate;
 
-const dtree = require('./data/json/decision_tree_data.json');
-const data = dtree;
+const data = require('./data/json/decision_tree_data.json');
 
 function mainMenu() {
   // TODO: The logic for figuring out with question is next should be done
@@ -44,7 +43,7 @@ function questionTemplate(questionObj) {
 
 	  if(input.type === 'link'){
 	    nextQuestion = input;
-	  }		
+	  }
 
       console.log("Next Question:", nextQuestion);
       var text = `${nextQuestion.id} ${nextQuestion.type}`;
