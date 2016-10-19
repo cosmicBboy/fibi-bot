@@ -1,5 +1,7 @@
 .DEFAULT=deploy
 
+include fibi.mk
+
 AWS_DEFAULT_PROFILE=fibidev
 
 .PHONY: dev-deps
@@ -31,6 +33,7 @@ set-timout:
 	aws --profile $(AWS_DEFAULT_PROFILE) lambda update-function-configuration --function-name fibi --timeout $(T)
 
 .PHONY: add-greeting
+# TODO create make target for adding greeting page in fb app
 
 .PHONY: add-menu
 add-menu:

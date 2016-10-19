@@ -37,3 +37,9 @@ make lambda-logs STREAM_NAMES="<stream_name>"
 # view all stream names
 make ls-log-streams
 ```
+
+## Run Fibi Locally
+
+```
+node server.js
+```
