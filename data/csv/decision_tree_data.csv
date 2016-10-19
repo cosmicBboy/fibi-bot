@@ -65,7 +65,7 @@ id,type,copy,blurb,pointsTo,url,urlText
 59,input,No,,"60,61",,
 60,link,Here are the SHPE scholarship programs you might be interested in!,,,http://shpe.org/scholarships,
 61,link,You might also be interested in the Hispanic Scholarship Fund.,,,http://hsf.net/en/scholarships/programs/general-college-scholarships,
-62,question,"If you are age 16 or over, you can apply for a NYS driver license. The first step is to apply for a learner permit at a DMV office.If you are age 16 or over, you can apply for a NYS driver license. The first step is to apply for a learner permit at a DMV office.",,"63,64",,
+62,question,"If you are age 16 or over, you can apply for a NYS driver license. The first step is to apply for a learner permit at a DMV office.",,"63,64",,
 63,input,How do I apply for a learner's permit?,,65,,
 64,input,I already have a learner's permit.,,78,,
 65,question,"You will need to take the following: 1) a written test, 2) an eye test, unless you bring an Eye Test Report (MV-619) completed by an eyecare professional",,"66,67",,
