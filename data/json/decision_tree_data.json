@@ -38,9 +38,7 @@
     "type": "link",
     "copy": "Nuts, you're too old. Go read the New Yorker.",
     "blurb": "",
-    "pointsTo": [
-      ""
-    ],
+    "pointsTo": [],
     "url": "newyorker.com",
     "urlText": ""
   },
@@ -651,9 +649,7 @@
     "type": "link",
     "copy": "Find out more here:",
     "blurb": "",
-    "pointsTo": [
-      ""
-    ],
+    "pointsTo": [],
     "url": "https://dmv.ny.gov/driver-license/prove-identity-age-permitlicense",
     "urlText": ""
   },
@@ -732,9 +728,7 @@
     "type": "link",
     "copy": "Here are the SHPE scholarship programs you might be interested in!",
     "blurb": "",
-    "pointsTo": [
-      ""
-    ],
+    "pointsTo": [],
     "url": "http://shpe.org/scholarships",
     "urlText": ""
   },
@@ -743,16 +737,14 @@
     "type": "link",
     "copy": "You might also be interested in the Hispanic Scholarship Fund.",
     "blurb": "",
-    "pointsTo": [
-      ""
-    ],
+    "pointsTo": [],
     "url": "http://hsf.net/en/scholarships/programs/general-college-scholarships",
     "urlText": ""
   },
   {
     "id": "62",
     "type": "question",
-    "copy": "If you are age 16 or over, you can apply for a NYS driver license. The first step is to apply for a learner permit at a DMV office.If you are age 16 or over, you can apply for a NYS driver license. The first step is to apply for a learner permit at a DMV office.",
+    "copy": "If you are age 16 or over, you can apply for a NYS driver license. The first step is to apply for a learner permit at a DMV office.",
     "blurb": "",
     "pointsTo": [
       "63",
@@ -834,9 +826,7 @@
     "type": "link",
     "copy": "To prepare for the written test, visit Driver's Manuel & Practice Tests.",
     "blurb": "",
-    "pointsTo": [
-      ""
-    ],
+    "pointsTo": [],
     "url": "https://dmv.ny.gov/driver-license/drivers-manual-practice-tests",
     "urlText": ""
   },
@@ -867,9 +857,7 @@
     "type": "link",
     "copy": "Make a reservation online.",
     "blurb": "",
-    "pointsTo": [
-      ""
-    ],
+    "pointsTo": [],
     "url": "https://visit.dmv.ny.gov/onlineReserve/indexB.html",
     "urlText": ""
   },
@@ -891,9 +879,7 @@
     "type": "link",
     "copy": "What is the Application for Permit, Driver License or Non-Driver ID Card (MV-44)",
     "blurb": "",
-    "pointsTo": [
-      ""
-    ],
+    "pointsTo": [],
     "url": "https://dmv.ny.gov/forms/mv44.pdf",
     "urlText": ""
   },
@@ -913,9 +899,7 @@
     "type": "link",
     "copy": "What are acceptable proofs of identity and date of birth?",
     "blurb": "",
-    "pointsTo": [
-      ""
-    ],
+    "pointsTo": [],
     "url": "https://dmv.ny.gov/driver-license/prove-identity-age-permitlicense",
     "urlText": ""
   },
@@ -924,9 +908,7 @@
     "type": "link",
     "copy": "What is the payment fee?",
     "blurb": "",
-    "pointsTo": [
-      ""
-    ],
+    "pointsTo": [],
     "url": "https://dmv.ny.gov/driver-license/fees-refunds",
     "urlText": ""
   },
@@ -1026,9 +1008,7 @@
     "type": "link",
     "copy": "There are additional restrictions for learner permit holders under age 18.",
     "blurb": "You may not drive with a learner permit on: 1) any street within a park in New York City, 2) any bridge or tunnel under the jurisdiction of the tri-borough Bridge and Tunel Authority, 3) the Cross Crountry, Hutchinson River, Saw Mill River, or Taconic State parkways in Westchester County, and 4) a DMV road test area.",
-    "pointsTo": [
-      ""
-    ],
+    "pointsTo": [],
     "url": "https://dmv.ny.gov/node/2132",
     "urlText": ""
   },
@@ -1049,9 +1029,7 @@
     "type": "link",
     "copy": "You can find the course curriculum and other information in the Pre-Licensing Course Instructor’s Manual (MV-277).\n\n",
     "blurb": "",
-    "pointsTo": [
-      ""
-    ],
+    "pointsTo": [],
     "url": "https://dmv.ny.gov/forms/mv277.pdf",
     "urlText": ""
   },
@@ -1082,9 +1060,7 @@
     "type": "link",
     "copy": "Search for Driving Instructions near me.",
     "blurb": "",
-    "pointsTo": [
-      ""
-    ],
+    "pointsTo": [],
     "url": "https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=driving%20instructions%20near%20me",
     "urlText": ""
   },
@@ -1105,9 +1081,7 @@
     "type": "link",
     "copy": "If you are under age 18, your parent must complete Certification of Supervised Driving (MV-262) to certify that you have had the requierd hours of supervised practice driving.",
     "blurb": "",
-    "pointsTo": [
-      ""
-    ],
+    "pointsTo": [],
     "url": "https://dmv.ny.gov/forms/mv262.pdf",
     "urlText": ""
   },
@@ -1116,9 +1090,7 @@
     "type": "link",
     "copy": "For more information on what to practice, visit website.",
     "blurb": "",
-    "pointsTo": [
-      ""
-    ],
+    "pointsTo": [],
     "url": "https://dmv.ny.gov/driver-license/prepare-your-road-test",
     "urlText": ""
   },
@@ -1240,9 +1212,7 @@
     "type": "link",
     "copy": "You can schedule a road test online.",
     "blurb": "",
-    "pointsTo": [
-      ""
-    ],
+    "pointsTo": [],
     "url": "https://roadtest.dmv.ny.gov/Default.asp",
     "urlText": ""
   },
@@ -1251,9 +1221,7 @@
     "type": "link",
     "copy": "Visit Social Security Administration to receive a letter of ineligibility.",
     "blurb": "",
-    "pointsTo": [
-      ""
-    ],
+    "pointsTo": [],
     "url": "https://www.ssa.gov/",
     "urlText": ""
   }
