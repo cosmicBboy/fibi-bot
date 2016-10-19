@@ -59,7 +59,8 @@ app.get("/hello/question/:id", (request, response) => {
   // get data for this convoItem to format the prompt
   prompt = convoItemToPrompt(itemData);
   console.log("\n", prompt.info);
-  // console.log(prompt.promptObj);
+  console.log("itemData", itemData);
+  console.log("prompt", prompt.promptObj);
   inquirer.prompt([prompt.promptObj]).then((answers) => {
     // console.log("what was my response?", answers, "\n");
     if (answers.choice == "END") {
@@ -128,7 +129,7 @@ function convoItemToPrompt(convoItemData) {
 
   // The
   if (pointsTo[0] == "START_OVER" | pointsTo[0] == "") {
-    choices = formatStartOverChoice()
+    choices = [formatStartOverChoice(), formatEndChoice()]
   } else {
     choices = formatPromptChoices(convoItemData.pointsTo)
   }
@@ -142,7 +143,7 @@ function convoItemToPrompt(convoItemData) {
       choices: choices
     }
   }
-  // console.log("result", result);
+  console.log("result", result);
   return result;
 }
 
@@ -153,28 +154,39 @@ function formatPromptChoices(idArray) {
   // here we assume that pointsTo only has one value in the array. All choices
   // should point to only one item
   formattedChoices = _.map(choices, obj => {
-    return {
-      name: obj.copy,
-      value: obj.pointsTo[0],
-      short: obj.copy
+    var pointsTo = obj.pointsTo[0],
+        res;
+    if (pointsTo === "START_OVER" | pointsTo == "") {
+      res = formatStartOverChoice()
+    } else if (pointsTo === "END") {
+      res = formatEndChoice()
+    } else {
+      res = {
+        name: obj.copy,
+        value: obj.pointsTo[0],
+        short: obj.copy
+      }
     }
+    return res;
   })
+
   return formattedChoices;
 }
 
 function formatStartOverChoice() {
-  return [
-    {
-      name: "start over",
-      value: "START_OVER",
-      short: "start_over"
-    },
-    {
-      name: "end chat",
-      value: "END",
-      short: "end_chat"
-    }
-  ]
+  return {
+    name: "start over",
+    value: "START_OVER",
+    short: "start_over"
+  }
+}
+
+function formatEndChoice() {
+  return{
+    name: "end chat",
+    value: "END",
+    short: "end_chat"
+  }
 }
 
 function createConvoItemUrl() {
