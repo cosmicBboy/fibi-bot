@@ -6,8 +6,8 @@ const express = require("express");
 const _ = require("underscore");
 const app = express();
 const port = 8080;
-// TODO: Get this variable from a settings.json file
 const host = "localhost";
+const debugLevel = process.env.DEBUG;
 
 const initConvoOptions = {
   host: host,
@@ -18,12 +18,6 @@ const initConvoOptions = {
 const endConvoOptions = {
   host: host,
   path: "/goodbye",
-  port: port
-}
-
-const getConvoItemOptions = {
-  host: host,
-  path: "/hello/question/legal_status",
   port: port
 }
 
@@ -41,16 +35,17 @@ app.use((request, response, next) => {
 app.get("/hello", (request, response) => {
   inquirer.prompt([mainMenu()]).then((answers) => {
     // console.log("answers:", answers, "\n");
-    http.get(getNextConvoRequest(answers.choice), function(res) {
-      // go to next question
-      console.log("\n");
-    });
+    http.get(getNextConvoRequest(answers.choice));
   });
   response.send("Starting conversation on the server...\n");
 });
 
 app.get("/hello/question/:id", (request, response) => {
   // console.log("params:", request.params);
+  request.socket.on("error", function() {
+    console.log("an error!");
+  });
+
   var itemData = findItem(request.params.id),
       prompt,
       convItem,
@@ -59,8 +54,8 @@ app.get("/hello/question/:id", (request, response) => {
   // get data for this convoItem to format the prompt
   prompt = convoItemToPrompt(itemData);
   console.log("\n", prompt.info);
-  console.log("itemData", itemData);
-  console.log("prompt", prompt.promptObj);
+  consoleDebug("itemData", itemData);
+  consoleDebug("prompt", prompt.promptObj);
   inquirer.prompt([prompt.promptObj]).then((answers) => {
     // console.log("what was my response?", answers, "\n");
     if (answers.choice == "END") {
@@ -70,14 +65,14 @@ app.get("/hello/question/:id", (request, response) => {
     } else {
       nextRequestOpts = getNextConvoRequest(answers.choice);
     }
-    http.get(nextRequestOpts, function(res) {
-      // go to next question
-    });
+    http.get(nextRequestOpts);
   });
+  response.send("Continuing conversation on the server...\n");
 });
 
 app.get("/goodbye", (request, response) => {
   console.log("Goodbye!\n");
+  response.send("Ending conversation...\n");
   process.exit();
 });
 
@@ -143,7 +138,8 @@ function convoItemToPrompt(convoItemData) {
       choices: choices
     }
   }
-  console.log("result", result);
+
+  consoleDebug("result", result);
   return result;
 }
 
@@ -215,4 +211,7 @@ function findChoices(idArray) {
 
 // TODO: Implement debug mode
 function consoleDebug() {
+  if (debugLevel == "1") {
+    console.log(arguments)
+  }
 }

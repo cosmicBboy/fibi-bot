@@ -12,6 +12,8 @@
     "test-get": "claudia test-lambda --profile fibidev --event test/get_event.json",
     "release": "claudia set-version --profile fibidev --version production",
     "create-data": "node scripts/create-json-from-csv.js data/csv/decision_tree_data.csv",
+    "fibi": "node server.js",
+    "fibi-debug": "DEBUG=1 node server.js",
     "start": "ntl"
   },
   "license": "MIT",

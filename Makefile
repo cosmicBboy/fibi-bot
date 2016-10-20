@@ -1,7 +1,5 @@
 .DEFAULT=deploy
 
-include fibi.mk
-
 AWS_DEFAULT_PROFILE=fibidev
 
 .PHONY: dev-deps
@@ -33,7 +31,25 @@ set-timout:
 	aws --profile $(AWS_DEFAULT_PROFILE) lambda update-function-configuration --function-name fibi --timeout $(T)
 
 .PHONY: add-greeting
-# TODO create make target for adding greeting page in fb app
+add-greeting:
+	curl -X POST -H "Content-Type: application/json" -d '{ \
+	  "setting_type":"greeting", \
+	  "greeting":{ \
+	    "text":"A chatbot to help immigrants find resources. Say hi!" \
+	  } \
+	}' "https://graph.facebook.com/v2.6/me/thread_settings?access_token=$(PAGE_ACCESS_TOKEN)"
+
+.PHONY: add-getting-started
+add-getting-started:
+	curl -X POST -H "Content-Type: application/json" -d '{ \
+	  "setting_type":"call_to_actions", \
+	  "thread_state":"new_thread", \
+	  "call_to_actions":[ \
+	    { \
+	      "payload":"START_OVER" \
+	    } \
+	  ] \
+	}' "https://graph.facebook.com/v2.6/me/thread_settings?access_token=$(PAGE_ACCESS_TOKEN)"      
 
 .PHONY: add-menu
 add-menu:
@@ -47,7 +63,7 @@ add-menu:
 	      "payload":"START_OVER" \
 	    } \
 	  ] \
-	}' "https://graph.facebook.com/v2.6/me/thread_settings?access_token=$(PAGE_ACCESS_TOKEN)" \
+	}' "https://graph.facebook.com/v2.6/me/thread_settings?access_token=$(PAGE_ACCESS_TOKEN)"
 
 .PHONY: rm-menu
 rm-menu:
