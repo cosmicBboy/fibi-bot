@@ -756,7 +756,7 @@
   {
     "id": "63",
     "type": "input",
-    "copy": "How do I apply for a learner's permit?",
+    "copy": "How do I apply?",
     "blurb": "",
     "pointsTo": [
       "65"
@@ -767,7 +767,7 @@
   {
     "id": "64",
     "type": "input",
-    "copy": "I already have a learner's permit.",
+    "copy": "Already have one",
     "blurb": "",
     "pointsTo": [
       "78"
@@ -790,7 +790,7 @@
   {
     "id": "66",
     "type": "input",
-    "copy": "What's the written test?",
+    "copy": "Tell me more",
     "blurb": "",
     "pointsTo": [
       "68"
@@ -801,7 +801,7 @@
   {
     "id": "67",
     "type": "input",
-    "copy": "I've already taken the written test. What's next?",
+    "copy": "What's next?",
     "blurb": "",
     "pointsTo": [
       "73"
@@ -812,8 +812,8 @@
   {
     "id": "68",
     "type": "question",
-    "copy": "You must take a written test to receive your learner permit.  To pass the test, you must get least 14 of the 20 multiple-choice questions correct. This includes the correct answers to at least two of the four questions about road signs.",
-    "blurb": "If you do not pass the written test, you can take it again for no additional fee. There is no limit to how many times you can take the written test.If you pass the written test, we will issue you a learner permit that is valid for approximately 5 years.",
+    "copy": "If you do not pass the written test, you can take it again for no additional fee. There is no limit to how many times you can take the written test.If you pass the written test, we will issue you a learner permit that is valid for approximately 5 years.",
+    "blurb": "You must take a written test to receive your learner permit.  To pass the test, you must get least 14 of the 20 multiple-choice questions correct. This includes the correct answers to at least two of the four questions about road signs.",
     "pointsTo": [
       "69",
       "70"
@@ -824,7 +824,7 @@
   {
     "id": "69",
     "type": "link",
-    "copy": "To prepare for the written test, visit Driver's Manuel & Practice Tests.",
+    "copy": "Take practice tests",
     "blurb": "",
     "pointsTo": [],
     "url": "https://dmv.ny.gov/driver-license/drivers-manual-practice-tests",
@@ -833,7 +833,7 @@
   {
     "id": "70",
     "type": "input",
-    "copy": "How do I take the written test?",
+    "copy": "How do I take it?",
     "blurb": "",
     "pointsTo": [
       "71"
@@ -855,7 +855,7 @@
   {
     "id": "72",
     "type": "link",
-    "copy": "Make a reservation online.",
+    "copy": "Make a reservation",
     "blurb": "",
     "pointsTo": [],
     "url": "https://visit.dmv.ny.gov/onlineReserve/indexB.html",
@@ -877,7 +877,7 @@
   {
     "id": "74",
     "type": "link",
-    "copy": "What is the Application for Permit, Driver License or Non-Driver ID Card (MV-44)",
+    "copy": "Tell me more",
     "blurb": "",
     "pointsTo": [],
     "url": "https://dmv.ny.gov/forms/mv44.pdf",
@@ -886,7 +886,7 @@
   {
     "id": "75",
     "type": "input",
-    "copy": "I don't have a Social Security Card.",
+    "copy": "I don't have an SSN",
     "blurb": "",
     "pointsTo": [
       "106"
@@ -897,7 +897,7 @@
   {
     "id": "76",
     "type": "link",
-    "copy": "What are acceptable proofs of identity and date of birth?",
+    "copy": "What can I use?",
     "blurb": "",
     "pointsTo": [],
     "url": "https://dmv.ny.gov/driver-license/prove-identity-age-permitlicense",
@@ -906,7 +906,7 @@
   {
     "id": "77",
     "type": "link",
-    "copy": "What is the payment fee?",
+    "copy": "What is the fee?",
     "blurb": "",
     "pointsTo": [],
     "url": "https://dmv.ny.gov/driver-license/fees-refunds",
@@ -927,7 +927,7 @@
   {
     "id": "79",
     "type": "input",
-    "copy": "How do I prepare for a road test?",
+    "copy": "How do I prepare?",
     "blurb": "",
     "pointsTo": [
       "81"
@@ -938,7 +938,7 @@
   {
     "id": "80",
     "type": "input",
-    "copy": "How do I take a road test?",
+    "copy": "How do I take it?",
     "blurb": "",
     "pointsTo": [
       "95"
@@ -962,7 +962,7 @@
   {
     "id": "82",
     "type": "input",
-    "copy": "What are the learner permit restrictions?",
+    "copy": "Restrictions?",
     "blurb": "",
     "pointsTo": [
       "85"
@@ -973,7 +973,7 @@
   {
     "id": "83",
     "type": "input",
-    "copy": "What is the Pre-licensing Course and how do I find one?",
+    "copy": "What's the course?",
     "blurb": "",
     "pointsTo": [
       "87"
@@ -984,7 +984,7 @@
   {
     "id": "84",
     "type": "input",
-    "copy": "How much supervised practice driving must I get before I take my road test?",
+    "copy": "How much practice?",
     "blurb": "",
     "pointsTo": [
       "92"
@@ -1006,8 +1006,8 @@
   {
     "id": "86",
     "type": "link",
-    "copy": "There are additional restrictions for learner permit holders under age 18.",
-    "blurb": "You may not drive with a learner permit on: 1) any street within a park in New York City, 2) any bridge or tunnel under the jurisdiction of the tri-borough Bridge and Tunel Authority, 3) the Cross Crountry, Hutchinson River, Saw Mill River, or Taconic State parkways in Westchester County, and 4) a DMV road test area.",
+    "copy": "Learn more",
+    "blurb": "You may not drive with a learner permit on: 1) any street within a park in New York City, 2) any bridge or tunnel under the jurisdiction of the tri-borough Bridge and Tunel Authority, 3) the Cross Crountry, Hutchinson River, Saw Mill River, or Taconic State parkways in Westchester County, and 4) a DMV road test area. There are additional restrictions for learner permit holders under age 18.",
     "pointsTo": [],
     "url": "https://dmv.ny.gov/node/2132",
     "urlText": ""
@@ -1015,8 +1015,8 @@
   {
     "id": "87",
     "type": "question",
-    "copy": "It is a DMV-approved, standardized classroom course that provides knowledge that you will need as a new driver.",
-    "blurb": "The course covers many important topics, including: 1) driving within the highway transportation system, 2) driver habits and skills, 3) feelings, attitudes and risk taking, 4) alcohol, other drugs and driving",
+    "copy": "The course covers many important topics, including: 1) driving within the highway transportation system, 2) driver habits and skills, 3) feelings, attitudes and risk taking, 4) alcohol, other drugs and driving",
+    "blurb": "It is a DMV-approved, standardized classroom course that provides knowledge that you will need as a new driver.",
     "pointsTo": [
       "88",
       "89"
@@ -1027,8 +1027,8 @@
   {
     "id": "88",
     "type": "link",
-    "copy": "You can find the course curriculum and other information in the Pre-Licensing Course Instructor’s Manual (MV-277).\n\n",
-    "blurb": "",
+    "copy": "Find out more",
+    "blurb": "You can find the course curriculum and other information in the Pre-Licensing Course Instructor’s Manual (MV-277).",
     "pointsTo": [],
     "url": "https://dmv.ny.gov/forms/mv277.pdf",
     "urlText": ""
@@ -1036,7 +1036,7 @@
   {
     "id": "89",
     "type": "input",
-    "copy": "Where do find a Pre-licensing Course?",
+    "copy": "Find a course",
     "blurb": "",
     "pointsTo": [
       "90"
@@ -1047,8 +1047,8 @@
   {
     "id": "90",
     "type": "question",
-    "copy": "The Pre-licensing Course is available through high schools, colleges, and many driving schools. To find providers in your area, look online or in your telephone directory for “Driving Instruction.” When you successfully complete the course, you will be given a Pre-licensing Course Certificate (MV-278).",
-    "blurb": "If you complete a high school or college driver education course, you will receive a Driver Education Certificate (MV-285), and you do not need a Pre-licensing Course Certificate. You must have one of these certificates to schedule your road test.",
+    "copy": "If you complete a high school or college driver education course, you will receive a Driver Education Certificate (MV-285), and you do not need a Pre-licensing Course Certificate. You must have one of these certificates to schedule your road test.",
+    "blurb": "The Pre-licensing Course is available through high schools, colleges, and many driving schools. To find providers in your area, look online or in your telephone directory for “Driving Instruction.” When you successfully complete the course, you will be given a Pre-licensing Course Certificate (MV-278).",
     "pointsTo": [
       "91"
     ],
@@ -1058,7 +1058,7 @@
   {
     "id": "91",
     "type": "link",
-    "copy": "Search for Driving Instructions near me.",
+    "copy": "Search near me",
     "blurb": "",
     "pointsTo": [],
     "url": "https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=driving%20instructions%20near%20me",
@@ -1079,8 +1079,8 @@
   {
     "id": "93",
     "type": "link",
-    "copy": "If you are under age 18, your parent must complete Certification of Supervised Driving (MV-262) to certify that you have had the requierd hours of supervised practice driving.",
-    "blurb": "",
+    "copy": "Learn more",
+    "blurb": "If you are under age 18, your parent must complete Certification of Supervised Driving (MV-262) to certify that you have had the required hours of supervised practice driving.",
     "pointsTo": [],
     "url": "https://dmv.ny.gov/forms/mv262.pdf",
     "urlText": ""
@@ -1088,7 +1088,7 @@
   {
     "id": "94",
     "type": "link",
-    "copy": "For more information on what to practice, visit website.",
+    "copy": "Visit website",
     "blurb": "",
     "pointsTo": [],
     "url": "https://dmv.ny.gov/driver-license/prepare-your-road-test",
@@ -1109,7 +1109,7 @@
   {
     "id": "96",
     "type": "input",
-    "copy": "How do I schedule a road test?",
+    "copy": "Schedule a road test",
     "blurb": "",
     "pointsTo": [
       "98"
@@ -1120,7 +1120,7 @@
   {
     "id": "97",
     "type": "input",
-    "copy": "I've already scheduled a road test.",
+    "copy": "Already scheduled it",
     "blurb": "",
     "pointsTo": [
       "100"
@@ -1131,8 +1131,8 @@
   {
     "id": "98",
     "type": "question",
-    "copy": "You must have the following to schedule a road test: 1) a valid New York State Learner Permit, 2) an original Pre-Licensing Course Certificate (MV-278) or a Driver Education Certificate (MV-285).",
-    "blurb": "3) provide your DMV ID Number from your Learner Permit and date of birth, 4) at least one unused test available, and 5) your ZIP code.",
+    "copy": "3) provide your DMV ID Number from your Learner Permit and date of birth, 4) at least one unused test available, and 5) your ZIP code.",
+    "blurb": "You must have the following to schedule a road test: 1) a valid New York State Learner Permit, 2) an original Pre-Licensing Course Certificate (MV-278) or a Driver Education Certificate (MV-285).",
     "pointsTo": [
       "99",
       "105"
@@ -1143,7 +1143,7 @@
   {
     "id": "99",
     "type": "input",
-    "copy": "What do I need on the day of my road test?",
+    "copy": "What do I need?",
     "blurb": "",
     "pointsTo": [
       "100"
@@ -1154,8 +1154,8 @@
   {
     "id": "100",
     "type": "question",
-    "copy": "You must have all of the following: 1) your photo learner permit, 2) glasses or contacts, if your permit indicates you need corrective lenses",
-    "blurb": "3) original Pre-Licensing Certificate or Driver Education Certificate, 4) a driver of age 21 or older who has a license valid to operate the test vehicle, 5) a vehicle to drive during the test that has a valid registration and inspection, operates properly and is in clean condition.",
+    "copy": "3) original Pre-Licensing Certificate or Driver Education Certificate, 4) a driver of age 21 or older who has a license valid to operate the test vehicle, 5) a vehicle to drive during the test that has a valid registration and inspection, operates properly and is in clean condition.",
+    "blurb": "You must have all of the following: 1) your photo learner permit, 2) glasses or contacts, if your permit indicates you need corrective lenses",
     "pointsTo": [
       "101",
       "102"
@@ -1166,7 +1166,7 @@
   {
     "id": "101",
     "type": "input",
-    "copy": "What happens if I pass my road test?",
+    "copy": "What if I pass?",
     "blurb": "",
     "pointsTo": [
       "103"
@@ -1177,7 +1177,7 @@
   {
     "id": "102",
     "type": "input",
-    "copy": "What happens if I fail my road test?",
+    "copy": "What if I fail?",
     "blurb": "",
     "pointsTo": [
       "104"
@@ -1210,7 +1210,7 @@
   {
     "id": "105",
     "type": "link",
-    "copy": "You can schedule a road test online.",
+    "copy": "Schedule a road test",
     "blurb": "",
     "pointsTo": [],
     "url": "https://roadtest.dmv.ny.gov/Default.asp",
@@ -1219,8 +1219,8 @@
   {
     "id": "106",
     "type": "link",
-    "copy": "Visit Social Security Administration to receive a letter of ineligibility.",
-    "blurb": "",
+    "copy": "Go to website",
+    "blurb": "Visit Social Security Administration to receive a letter of ineligibility.",
     "pointsTo": [],
     "url": "https://www.ssa.gov/",
     "urlText": ""
