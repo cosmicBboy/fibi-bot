@@ -18,42 +18,57 @@ function mainMenu() {
     .get();
 }
 
+function formatQuestionTemplate(questionCopy, inputIds) {
+  // For each input id, create a fb message object
+  var message = new fbTemplate.text(questionCopy);
+  var inputs = _.filter(data, o => { return _.contains(inputIds, o.id); });
+  console.log("These are the inputs:", inputs);
+  console.log("Trying to form message in formatQuestionTemplate", message);
+  var inputs = _.filter(data, o => { return _.contains(inputIds, o.id); });
+  _.each(inputs, input => {
+    console.log("This is a single input:", input);
+    console.log("Input copy:", input.copy);
+    var nextIds = input.pointsTo;
+    message.addQuickReply(
+      input.copy, getPointerPayload(nextIds, input, message));
+  });
+  return message;
+}
+
+function getPointerPayload(nextIds) {
+  var responsePayload;
+  textResponses = _.each(nextIds, nextId => {
+    return formatPayload(nextId);
+  });
+  return textResponses.join(seperator = ",");
+}
+
+function formatPayload(nextId) {
+  var payload;
+  if (nextId == "END") {
+    console.log("adding END interaction to the pointers");
+    payload = nextId;
+  } else {
+    var nextQuestion = getNextQuestion(nextId);
+    console.log("Next Question:", nextQuestion);
+    var payload = `${nextQuestion.id} ${nextQuestion.type}`;
+  }
+  console.log("Payload:", payload);
+  return payload;
+}
+
+function getNextQuestion(nextId) {
+  return _.find(data, o => {
+    return o.id === nextId
+  });
+}
+
 function questionTemplate(questionObj) {
   console.log("This is the current question:", questionObj);
   var inputIds = questionObj.pointsTo;
-  var inputs = _.filter(data, o => { return _.contains(inputIds, o.id); });
   console.log("These are the inputIds:", inputIds);
-  console.log("These are the inputs:", inputs);
-
-  //This assumes that the Question will directy point to the end object
-  //but now our data is updated so that only an input will point to the end
-  var message = new fbTemplate.text(questionObj.copy);
-
-  _.each(inputs, input => {
-    // Assume that input can only point to one question
-    var nextId = input.pointsTo[0];
-    if (nextId == "END") {
-      console.log("input ENDs interaction");
-      message.addQuickReply(input.copy, nextId);
-    } else {
-      console.log("Points to:", nextId);
-      var nextQuestion = _.find(data, o => {
-        return o.id === nextId;
-      });
-
-	  if(input.type === 'link'){
-	    nextQuestion = input;
-	  }
-
-      console.log("Next Question:", nextQuestion);
-      var text = `${nextQuestion.id} ${nextQuestion.type}`;
-      console.log("This is a single input:", input);
-      console.log("Copy:", input.copy);
-      console.log("Request text:", text);
-      message.addQuickReply(input.copy, text);
-    }
-  });
-
+  var message = formatQuestionTemplate(questionObj.copy, inputIds);
+  console.log("This is the message:", message);
   // If object contains blurb, return a list of [blurb, message]
   if (questionObj.blurb.length > 0) {
     return [questionObj.blurb, message.get()];
@@ -82,18 +97,21 @@ const api = botBuilder(function (request, originalApiRequest) {
   console.log("START_OVER", request.text == "START_OVER");
   console.log("quick reply?", !quickReply);
 
-  if (request.text == "START_OVER" || !quickReply &&
-      !request.postback) {
-	var url = `https://graph.facebook.com/v2.6/${request.sender}?fields=first_name,last_name,profile_pic,locale,timezone,gender&access_token=${originalApiRequest.env.facebookAccessToken}`;
-	return rp.get(url)
-      .then(response => {
-        console.log("This is the response", JSON.stringify(response));
-        var user = JSON.parse(response.body)
-        console.log("This is the user", JSON.stringify(user));
+  if (request.text == "START_OVER" || !quickReply && !request.postback) {
+	 var url = `https://graph.facebook.com/v2.6/${request.sender}?fields=first_name,last_name,profile_pic,locale,timezone,gender&access_token=${originalApiRequest.env.facebookAccessToken}`;
+	 return rp.get(url)
+    .then(response => {
+      console.log("This is the response", JSON.stringify(response));
+      var user = JSON.parse(response.body)
+      console.log("This is the user", JSON.stringify(user));
+  		return [
+        `Hi ${user.first_name}, I'm FIBI. I'm made for immigrants, by immigrants.`,
+        `I can try to help you find resources to support obtaining legal status, scholarships, and health care.`,
+        mainMenu()];
 
-		var intro = [`Hi ${user.first_name}, I'm FIBI. I'm made for immigrants, by immigrants.`,`I can try to help you find resources to support obtaining legal status, scholarships, and health care.`, mainMenu()];
-		return intro;
-      }).catch(error => {console.log('received error: ' + error);});
+    }).catch(error => {
+      console.log('received error: ' + error);
+    });
   }
 
   if (!!quickReply) {
@@ -103,6 +121,10 @@ const api = botBuilder(function (request, originalApiRequest) {
   } else {
     throw "no payload!";
   }
+
+  // TODO: payloadList should be split into a list on ','
+  // TODO: assume that if payloadList.length == 1, do usual behavior
+  // TODO: assume that if payloadList.length > 1, format link fbTemplate
 
   console.log("This is the payload", payload);
 

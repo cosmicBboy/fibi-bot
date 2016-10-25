@@ -123,7 +123,7 @@ function convoItemToPrompt(convoItemData) {
       choices;
 
   // The
-  if (pointsTo[0] == "START_OVER" | pointsTo[0] == "") {
+  if (pointsTo[0] == "START_OVER" | pointsTo[0] == "" | !pointsTo[0]) {
     choices = [formatStartOverChoice(), formatEndChoice()]
   } else {
     choices = formatPromptChoices(convoItemData.pointsTo)
