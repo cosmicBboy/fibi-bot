@@ -212,6 +212,6 @@ function findChoices(idArray) {
 // TODO: Implement debug mode
 function consoleDebug() {
   if (debugLevel == "1") {
-    console.log(arguments)
+    console.log.apply(null, Array.from(arguments));
   }
 }
