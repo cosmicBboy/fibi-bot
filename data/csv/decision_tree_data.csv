@@ -1,7 +1,7 @@
 id,type,copy,blurb,pointsTo,url,urlText
 1,question,"Were you born on or after June 15, 1981 and are you currently at least 15 years old?","Before moving on, I'd like to learn more about you!","2,3",,
 2,input,Yes,,5,,
-3,input,No,,4,,
+3,input,No,,35,,
 4,link,"Nuts, you're too old. Go read the New Yorker.",,,newyorker.com,
 5,question,"Are you a resident, citizen, or have some other form of immigrant status?",,"6,7,8",,
 6,input,Resident,,36,,
@@ -91,7 +91,7 @@ id,type,copy,blurb,pointsTo,url,urlText
 85,question,You may not drive unless accompanied by a supervising driver age 21 or older who has a valid license to operate the vehicle you are driving.,,86,,
 86,link,Learn more,"You may not drive with a learner permit on: 1) any street within a park in New York City, 2) any bridge or tunnel under the jurisdiction of the tri-borough Bridge and Tunel Authority, 3) the Cross Crountry, Hutchinson River, Saw Mill River, or Taconic State parkways in Westchester County, and 4) a DMV road test area. There are additional restrictions for learner permit holders under age 18.",,https://dmv.ny.gov/node/2132,
 87,question,"The course covers many important topics, including: 1) driving within the highway transportation system, 2) driver habits and skills, 3) feelings, attitudes and risk taking, 4) alcohol, other drugs and driving","It is a DMV-approved, standardized classroom course that provides knowledge that you will need as a new driver.","88,89",,
-88,link,Find out more,You can find the course curriculum and other information in the Pre-Licensing Course Instructor’s Manual (MV-277).,,https://dmv.ny.gov/forms/mv277.pdf,
+88,link,Find out more,,,https://dmv.ny.gov/forms/mv277.pdf,
 89,input,Find a course,,90,,
 90,question,"If you complete a high school or college driver education course, you will receive a Driver Education Certificate (MV-285), and you do not need a Pre-licensing Course Certificate. You must have one of these certificates to schedule your road test.","The Pre-licensing Course is available through high schools, colleges, and many driving schools. To find providers in your area, look online or in your telephone directory for “Driving Instruction.” When you successfully complete the course, you will be given a Pre-licensing Course Certificate (MV-278).",91,,
 91,link,Search near me,,,https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=driving%20instructions%20near%20me,
