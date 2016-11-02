@@ -8,10 +8,10 @@ const fbTemplate = require('claudia-bot-builder').fbTemplate;
 const FibiApi = {
   mainMenu: function() {
     return new fbTemplate.text(`What kind of support are you interested?`)
-        .addQuickReply("Legal Status", "1 question")
-        .addQuickReply("Driver's License", "62 question")
-        .addQuickReply("Scholarships", "54 question")
-      .get();  
+        .addQuickReply("📜 Legal Status", "1 question")
+        .addQuickReply("🚗 Driver's License", "62 question")
+        .addQuickReply("📝 Scholarships", "54 question")
+      .get();
   },
   singlePayloadTemplate: function(payload) {
     if (_.contains(payload.split(' '), "END")) {
@@ -31,11 +31,13 @@ const FibiApi = {
       var link = utils.getRecord(linkId);
       console.log("This is link:", link);
       urlText = getButtonText(link);
-      
-      // create baseline message
-      message.addBubble(link.copy)
-        .addButton(urlText, link.url);
 
+      // create baseline message
+      message.addBubble(link.copy, link.blurb);
+      if (!!link.imageUrl) {
+        message.addImage(link.imageUrl);
+      }
+      message.addButton(urlText, link.url);
       if (link.pointsTo.length > 0) {
         message = addMultiInputBubbles(link.pointsTo, message);
       }
@@ -53,7 +55,7 @@ function processEndPayload (payload) {
   var endObject = utils.getRecord(payload.split(' ')[0])
   console.log("This is the next END object:", endObject);
   return new fbTemplate.text(endObject.copy)
-    .addQuickReply("Chat with me again!", "START_OVER")
+    .addQuickReply("Chat again!", "START_OVER")
     .get();
 }
 
@@ -126,7 +128,6 @@ function addMultiInputBubbles(linkPointsToList, message) {
     if (linkInput.pointsTo[0] == "START_OVER") {
       message.addButton(linkInput.copy, "START_OVER");
     } else {
-      // Assume that input can only point to one question
       var nextId = linkInput.pointsTo[0];
       var nextQuestion = utils.getRecord(nextId);
       console.log("Next Question:", nextQuestion);
@@ -169,7 +170,7 @@ function getPointerPayload(nextIds) {
 function formatPointerPayload(nextId) {
   var payload;
   if (nextId === "END") {
-    payload = "END";
+    payload = "35 END";
   } else {
     var nextQuestion = utils.getRecord(nextId);
     console.log("Next Question:", nextQuestion);

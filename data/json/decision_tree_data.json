@@ -9,7 +9,8 @@
       "3"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "2",
@@ -20,7 +21,8 @@
       "5"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "3",
@@ -31,7 +33,8 @@
       "35"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "4",
@@ -40,7 +43,8 @@
     "blurb": "",
     "pointsTo": [],
     "url": "newyorker.com",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "5",
@@ -53,7 +57,8 @@
       "8"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "6",
@@ -64,7 +69,8 @@
       "36"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "7",
@@ -75,7 +81,8 @@
       "36"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "8",
@@ -86,7 +93,8 @@
       "9"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "9",
@@ -98,7 +106,8 @@
       "11"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "10",
@@ -109,7 +118,8 @@
       "35"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "11",
@@ -120,7 +130,8 @@
       "1000"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "12",
@@ -131,7 +142,8 @@
       "35"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "1000",
@@ -143,7 +155,8 @@
       "1002"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "1001",
@@ -154,7 +167,8 @@
       "13"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "1002",
@@ -162,10 +176,11 @@
     "copy": "No",
     "blurb": "",
     "pointsTo": [
-      "END"
+      "35"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "13",
@@ -177,7 +192,8 @@
       "15"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "14",
@@ -188,7 +204,8 @@
       "16"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "15",
@@ -199,7 +216,8 @@
       "1003"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "16",
@@ -211,7 +229,8 @@
       "18"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "17",
@@ -222,7 +241,8 @@
       "19"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "18",
@@ -233,7 +253,8 @@
       "1003"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "19",
@@ -245,7 +266,8 @@
       "21"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "20",
@@ -256,7 +278,8 @@
       "22"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "21",
@@ -267,7 +290,8 @@
       "25"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "22",
@@ -279,7 +303,8 @@
       "24"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "23",
@@ -290,7 +315,8 @@
       "25"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "24",
@@ -301,7 +327,8 @@
       "1003"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "25",
@@ -313,7 +340,8 @@
       "27"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "26",
@@ -324,7 +352,8 @@
       "28"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "27",
@@ -335,7 +364,8 @@
       "31"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "28",
@@ -347,7 +377,8 @@
       "30"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "29",
@@ -358,7 +389,8 @@
       "31"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "30",
@@ -369,7 +401,8 @@
       "1003"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "31",
@@ -381,7 +414,8 @@
       "33"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "32",
@@ -392,7 +426,8 @@
       "34"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "33",
@@ -403,31 +438,34 @@
       "1003"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "34",
     "type": "link",
-    "copy": "Woot! It looks like you qualify for DACA. What're you waiting for?",
+    "copy": "Woot! It looks like you qualify for DACA. 🎉 👏 🎉  What're you waiting for?",
     "blurb": "",
     "pointsTo": [
       "1004",
       "1005"
     ],
     "url": "https://www.roadtostatus.com/immigration-forms/uscis-form-i-821d/",
-    "urlText": "Apply for DACA"
+    "urlText": "Apply for DACA",
+    "imageUrl": ""
   },
   {
     "id": "1003",
     "type": "link",
-    "copy": "Sign up below and we'll get back to you soon with more resources!",
-    "blurb": "It doesn't look like you qualify for DACA 😞 Don't worry! There are many non-profit organizations that can help you support you with your legal status. ",
+    "copy": "What do you want to do next?",
+    "blurb": "It doesn't look like you qualify for DACA 😞 I'm still under construction, so chat with me again later and I might be able to help you out!",
     "pointsTo": [
       "1004",
       "1005"
     ],
-    "url": "https://docs.google.com/forms/d/e/1FAIpQLSeJPYfhvKzMo86to9zLTLNM2aI0geKNvPIrVyS9QsdVFzB3dA/viewform",
-    "urlText": "Sign up"
+    "url": "",
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "1004",
@@ -438,29 +476,32 @@
       "13"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "1005",
     "type": "input",
-    "copy": "Chat with me again!",
+    "copy": "Chat again!",
     "blurb": "",
     "pointsTo": [
       "START_OVER"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "35",
     "type": "END",
-    "copy": "In that case, I don't know how I can help you more 😞, but thanks for chatting with me! I'm still under construction, and if you'd like me to keep you posted on developments, you can sign up below",
+    "copy": "In that case, I don't know how I can help you more 😞, but thanks for chatting with me! I'm still under construction, so please come back later and I might be able to help you",
     "blurb": "",
     "pointsTo": [
       "START_OVER"
     ],
-    "url": "https://docs.google.com/forms/d/e/1FAIpQLSeJPYfhvKzMo86to9zLTLNM2aI0geKNvPIrVyS9QsdVFzB3dA/viewform",
-    "urlText": ""
+    "url": "",
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "36",
@@ -472,7 +513,8 @@
       "38"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "37",
@@ -483,7 +525,8 @@
       "39"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "38",
@@ -494,19 +537,21 @@
       "42"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "39",
     "type": "question",
-    "copy": "Are you at least 14 years old",
+    "copy": "Are you at least 14 years old?",
     "blurb": "",
     "pointsTo": [
       "40",
       "41"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "40",
@@ -517,7 +562,8 @@
       "45"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "41",
@@ -528,7 +574,8 @@
       "35"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "42",
@@ -540,7 +587,8 @@
       "44"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "43",
@@ -551,7 +599,8 @@
       "45"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "44",
@@ -562,19 +611,21 @@
       "35"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "45",
     "type": "question",
-    "copy": "Do you have a learners Permit?",
+    "copy": "Do you have a learners permit?",
     "blurb": "",
     "pointsTo": [
       "46",
       "47"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "46",
@@ -585,7 +636,8 @@
       "35"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "47",
@@ -596,7 +648,8 @@
       "48"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "48",
@@ -609,7 +662,8 @@
       "51"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "49",
@@ -620,7 +674,8 @@
       "53"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "50",
@@ -628,10 +683,11 @@
     "copy": "Yes",
     "blurb": "",
     "pointsTo": [
-      "52"
+      "62"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "51",
@@ -642,16 +698,45 @@
       "35"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "53",
     "type": "link",
     "copy": "Find out more here:",
     "blurb": "",
-    "pointsTo": [],
+    "pointsTo": [
+      "3000",
+      "3001"
+    ],
     "url": "https://dmv.ny.gov/driver-license/prove-identity-age-permitlicense",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
+  },
+  {
+    "id": "3000",
+    "type": "input",
+    "copy": "I have proof",
+    "blurb": "",
+    "pointsTo": [
+      "62"
+    ],
+    "url": "",
+    "urlText": "",
+    "imageUrl": ""
+  },
+  {
+    "id": "3001",
+    "type": "input",
+    "copy": "I don't",
+    "blurb": "",
+    "pointsTo": [
+      "35"
+    ],
+    "url": "",
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "54",
@@ -663,7 +748,8 @@
       "56"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "55",
@@ -674,7 +760,8 @@
       "57"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "56",
@@ -685,7 +772,8 @@
       "35"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "57",
@@ -697,7 +785,8 @@
       "59"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "58",
@@ -706,10 +795,12 @@
     "blurb": "",
     "pointsTo": [
       "60",
-      "61"
+      "61",
+      "2000"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "59",
@@ -718,28 +809,44 @@
     "blurb": "",
     "pointsTo": [
       "60",
-      "61"
+      "61",
+      "2000"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "60",
     "type": "link",
-    "copy": "Here are the SHPE scholarship programs you might be interested in!",
-    "blurb": "",
+    "copy": "The Hispanic Scholarship Fund",
+    "blurb": "Here are some scholarships offered by the Hispanic Scholarship Fund!",
     "pointsTo": [],
-    "url": "http://shpe.org/scholarships",
-    "urlText": ""
+    "url": "http://hsf.net/en/scholarships/programs/",
+    "urlText": "",
+    "imageUrl": "http://hsf.net/assets/HSF-Logo-FB-og.png"
   },
   {
     "id": "61",
     "type": "link",
-    "copy": "You might also be interested in the Hispanic Scholarship Fund.",
-    "blurb": "",
+    "copy": "SHPE scholarship programs",
+    "blurb": "You might also want to check in on the SHPE scholarship programs",
     "pointsTo": [],
-    "url": "http://hsf.net/en/scholarships/programs/general-college-scholarships",
-    "urlText": ""
+    "url": "http://shpe.org/scholarships",
+    "urlText": "",
+    "imageUrl": "http://shpe.org/images/logos/shpe_logo_img.jpg"
+  },
+  {
+    "id": "2000",
+    "type": "link",
+    "copy": "Scholarships.com",
+    "blurb": "Search for scholarships by type and find your match",
+    "pointsTo": [
+      "START_OVER"
+    ],
+    "url": "https://www.scholarships.com/financial-aid/college-scholarships/scholarships-by-type/",
+    "urlText": "🔎 Search by type",
+    "imageUrl": "https://www.scholarships.com/img/logo.png"
   },
   {
     "id": "62",
@@ -751,7 +858,8 @@
       "64"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "63",
@@ -762,7 +870,8 @@
       "65"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "64",
@@ -773,7 +882,8 @@
       "78"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "65",
@@ -785,7 +895,8 @@
       "67"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "66",
@@ -796,7 +907,8 @@
       "68"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "67",
@@ -807,7 +919,8 @@
       "73"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "68",
@@ -819,7 +932,8 @@
       "70"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "69",
@@ -828,7 +942,8 @@
     "blurb": "",
     "pointsTo": [],
     "url": "https://dmv.ny.gov/driver-license/drivers-manual-practice-tests",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "70",
@@ -839,7 +954,8 @@
       "71"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "71",
@@ -850,7 +966,8 @@
       "72"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "72",
@@ -859,7 +976,8 @@
     "blurb": "",
     "pointsTo": [],
     "url": "https://visit.dmv.ny.gov/onlineReserve/indexB.html",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "73",
@@ -872,7 +990,8 @@
       "77"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "74",
@@ -881,7 +1000,8 @@
     "blurb": "",
     "pointsTo": [],
     "url": "https://dmv.ny.gov/forms/mv44.pdf",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "75",
@@ -892,25 +1012,28 @@
       "106"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "76",
     "type": "link",
-    "copy": "What can I use?",
+    "copy": "Acceptable proof?",
     "blurb": "",
     "pointsTo": [],
     "url": "https://dmv.ny.gov/driver-license/prove-identity-age-permitlicense",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "77",
     "type": "link",
-    "copy": "What is the fee?",
+    "copy": "What's the fee?",
     "blurb": "",
     "pointsTo": [],
     "url": "https://dmv.ny.gov/driver-license/fees-refunds",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "78",
@@ -922,7 +1045,8 @@
       "80"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "79",
@@ -933,7 +1057,8 @@
       "81"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "80",
@@ -944,7 +1069,8 @@
       "95"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "81",
@@ -957,7 +1083,8 @@
       "84"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "82",
@@ -968,7 +1095,8 @@
       "85"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "83",
@@ -979,7 +1107,8 @@
       "87"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "84",
@@ -990,7 +1119,8 @@
       "92"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "85",
@@ -1001,7 +1131,8 @@
       "86"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "86",
@@ -1010,7 +1141,8 @@
     "blurb": "You may not drive with a learner permit on: 1) any street within a park in New York City, 2) any bridge or tunnel under the jurisdiction of the tri-borough Bridge and Tunel Authority, 3) the Cross Crountry, Hutchinson River, Saw Mill River, or Taconic State parkways in Westchester County, and 4) a DMV road test area. There are additional restrictions for learner permit holders under age 18.",
     "pointsTo": [],
     "url": "https://dmv.ny.gov/node/2132",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "87",
@@ -1022,7 +1154,8 @@
       "89"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "88",
@@ -1031,7 +1164,8 @@
     "blurb": "",
     "pointsTo": [],
     "url": "https://dmv.ny.gov/forms/mv277.pdf",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "89",
@@ -1042,7 +1176,8 @@
       "90"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "90",
@@ -1053,7 +1188,8 @@
       "91"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "91",
@@ -1062,7 +1198,8 @@
     "blurb": "",
     "pointsTo": [],
     "url": "https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=driving%20instructions%20near%20me",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "92",
@@ -1074,7 +1211,8 @@
       "94"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "93",
@@ -1083,7 +1221,8 @@
     "blurb": "If you are under age 18, your parent must complete Certification of Supervised Driving (MV-262) to certify that you have had the required hours of supervised practice driving.",
     "pointsTo": [],
     "url": "https://dmv.ny.gov/forms/mv262.pdf",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "94",
@@ -1092,7 +1231,8 @@
     "blurb": "",
     "pointsTo": [],
     "url": "https://dmv.ny.gov/driver-license/prepare-your-road-test",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "95",
@@ -1104,7 +1244,8 @@
       "97"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "96",
@@ -1115,7 +1256,8 @@
       "98"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "97",
@@ -1126,7 +1268,8 @@
       "100"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "98",
@@ -1138,7 +1281,8 @@
       "105"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "99",
@@ -1149,7 +1293,8 @@
       "100"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "100",
@@ -1161,7 +1306,8 @@
       "102"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "101",
@@ -1172,7 +1318,8 @@
       "103"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "102",
@@ -1183,7 +1330,8 @@
       "104"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "103",
@@ -1194,7 +1342,8 @@
       "96"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "104",
@@ -1205,7 +1354,8 @@
       "105"
     ],
     "url": "",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "105",
@@ -1214,7 +1364,8 @@
     "blurb": "",
     "pointsTo": [],
     "url": "https://roadtest.dmv.ny.gov/Default.asp",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   },
   {
     "id": "106",
@@ -1223,6 +1374,7 @@
     "blurb": "Visit Social Security Administration to receive a letter of ineligibility.",
     "pointsTo": [],
     "url": "https://www.ssa.gov/",
-    "urlText": ""
+    "urlText": "",
+    "imageUrl": ""
   }
 ]

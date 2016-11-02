@@ -37,7 +37,7 @@ const api = botBuilder(function (request, originalApiRequest) {
       var user = JSON.parse(response.body)
       console.log("This is the user", JSON.stringify(user));
   		return [
-        `Hi ${user.first_name}, I'm FIBI. I'm made for immigrants, by immigrants.`,
+        `Hi ${user.first_name}, I'm Fibi. I'm made for immigrants, by immigrants.`,
         `I can help you find resources for obtaining legal status, a driver's license, or college scholarships.`,
         fibi.mainMenu()
       ];
